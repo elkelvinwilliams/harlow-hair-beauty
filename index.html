@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harlow Hair & Beauty — Premium hair and beauty services in Harlow, Essex. Book your appointment today.">
+  <title>Harlow Hair & Beauty | Premium Salon, Harlow Essex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { accent: '#B8956A', cream: '#FAFAF8', dark: '#0F0F0F' },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans:  ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-cream text-dark">
+
+  <!-- ═══ NAVIGATION ════════════════════════════════════════════════════════ -->
+  <nav id="site-nav" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="index.html" class="font-serif text-white text-2xl tracking-[0.22em] font-semibold hover:text-accent transition-colors" aria-label="Harlow Hair & Beauty — Home">
+          HARLOW
+        </a>
+
+        <!-- Desktop links -->
+        <div class="hidden md:flex items-center gap-8" role="list">
+          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Home</a>
+          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Services</a>
+          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">About</a>
+          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Gallery</a>
+          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Contact</a>
+        </div>
+
+        <!-- CTA + hamburger -->
+        <div class="flex items-center gap-4">
+          <a href="contact.html#booking" class="btn-primary hidden sm:inline-flex text-sm px-5 py-2.5">Book Now</a>
+          <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"
+                  class="md:hidden text-white p-2 -mr-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
+            <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/>
+            </svg>
+            <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="hidden" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" role="navigation" aria-label="Mobile menu">
+        <div class="pb-6 pt-2 flex flex-col gap-1 border-t border-white/10">
+          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Home</a>
+          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Services</a>
+          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">About</a>
+          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Gallery</a>
+          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Contact</a>
+          <a href="contact.html#booking" class="btn-primary text-center mt-3">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ═══ HERO ════════════════════════════════════════════════════════════ -->
+    <section class="hero-bg relative flex items-center justify-center min-h-screen text-center px-6" aria-label="Hero">
+      <!-- Subtle decorative grid overlay -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: repeating-linear-gradient(0deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px), repeating-linear-gradient(90deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px);" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto pt-20">
+        <span class="section-label" style="color: var(--accent);">Premium Hair & Beauty · Harlow, Essex</span>
+
+        <h1 class="font-serif text-white font-semibold mt-2 leading-none tracking-tight" style="font-size: clamp(3.5rem, 10vw, 8rem);">
+          HARLOW
+        </h1>
+        <p class="font-serif text-white/60 italic mt-2" style="font-size: clamp(1.1rem, 2.5vw, 1.5rem);">
+          Where beauty meets artistry
+        </p>
+        <p class="text-white/45 text-sm sm:text-base mt-6 max-w-lg mx-auto leading-relaxed font-light">
+          Your destination for transformative hair & beauty experiences in the heart of Harlow.
+          Crafted for you, by experts who care.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <a href="contact.html#booking" class="btn-primary">Book an Appointment</a>
+          <a href="services.html" class="btn-outline">Explore Services</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="flex items-center justify-center gap-10 mt-16 pt-10 border-t border-white/10">
+          <div class="text-center">
+            <div class="font-serif text-white text-2xl font-semibold">500<span style="color:var(--accent)">+</span></div>
+            <div class="text-white/40 text-xs tracking-widest uppercase mt-1">Happy Clients</div>
+          </div>
+          <div class="w-px h-10 bg-white/15" aria-hidden="true"></div>
+          <div class="text-center">
+            <div class="font-serif text-white text-2xl font-semibold">10<span style="color:var(--accent)">+</span></div>
+            <div class="text-white/40 text-xs tracking-widest uppercase mt-1">Years Experience</div>
+          </div>
+          <div class="w-px h-10 bg-white/15" aria-hidden="true"></div>
+          <div class="text-center">
+            <div class="font-serif text-white text-2xl font-semibold">5<span style="color:var(--accent)">★</span></div>
+            <div class="text-white/40 text-xs tracking-widest uppercase mt-1">Rated</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 scroll-indicator" aria-hidden="true">
+        <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="18" height="26" rx="9" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <circle cx="10" cy="8" r="2.5" fill="rgba(184,149,106,0.7)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES PREVIEW ════════════════════════════════════════════════ -->
+    <section class="py-24 px-6 bg-white" aria-labelledby="services-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <span class="section-label">What We Offer</span>
+          <h2 id="services-heading" class="font-serif text-4xl sm:text-5xl font-semibold leading-tight mt-2">
+            Luxury services,<br><em class="font-normal">tailored to you</em>
+          </h2>
+          <p class="text-gray-500 mt-5 max-w-md mx-auto text-sm leading-relaxed">
+            From precision cuts to indulgent beauty treatments, every visit is a
+            bespoke experience crafted for your unique needs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- Hair -->
+          <article class="service-card h-[480px] reveal reveal-delay-1">
+            <div class="service-card-bg ph-hair-1"></div>
+            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
+              <span class="section-label" style="color: var(--accent);">01</span>
+              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Hair Services</h3>
+              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
+                Precision cuts, stunning colour, treatments &amp; styling for every occasion.
+              </p>
+              <a href="services.html#hair" class="btn-outline text-xs px-5 py-2.5 self-start">From £35</a>
+            </div>
+          </article>
+
+          <!-- Beauty -->
+          <article class="service-card h-[480px] sm:mt-10 reveal reveal-delay-2">
+            <div class="service-card-bg ph-beauty-1"></div>
+            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
+              <span class="section-label" style="color: var(--accent);">02</span>
+              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Beauty Treatments</h3>
+              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
+                Facials, brow & lash, waxing and pampering treatments that refresh and restore.
+              </p>
+              <a href="services.html#beauty" class="btn-outline text-xs px-5 py-2.5 self-start">From £15</a>
+            </div>
+          </article>
+
+          <!-- Nails -->
+          <article class="service-card h-[480px] reveal reveal-delay-3">
+            <div class="service-card-bg ph-nails-1"></div>
+            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
+              <span class="section-label" style="color: var(--accent);">03</span>
+              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Nails & Extras</h3>
+              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
+                Manicures, pedicures, gel nails, nail art — and luxurious pampering packages.
+              </p>
+              <a href="services.html#nails" class="btn-outline text-xs px-5 py-2.5 self-start">From £25</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-12 reveal">
+          <a href="services.html" class="btn-outline-dark">View Full Menu & Prices</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT TEASER ════════════════════════════════════════════════════ -->
+    <section class="py-24 px-6" style="background: var(--cream);" aria-labelledby="about-heading">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Image -->
+        <div class="relative reveal order-2 lg:order-1">
+          <div class="ph-about w-full h-[480px] lg:h-[580px]"></div>
+          <!-- Floating accent box -->
+          <div class="absolute -bottom-6 -right-6 bg-white p-6 shadow-lg hidden sm:block">
+            <div class="font-serif text-4xl font-semibold" style="color:var(--accent)">10<span class="text-2xl">+</span></div>
+            <div class="text-xs tracking-widest uppercase text-gray-500 mt-1">Years of excellence</div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="order-1 lg:order-2 reveal reveal-delay-2">
+          <span class="accent-line"></span>
+          <span class="section-label">Our Story</span>
+          <h2 id="about-heading" class="font-serif text-4xl sm:text-5xl font-semibold leading-tight mt-2">
+            More than a salon —<br><em class="font-normal">a sanctuary</em>
+          </h2>
+          <p class="text-gray-500 mt-6 leading-relaxed">
+            Founded in the heart of Harlow, we've built our reputation on one simple belief:
+            every client deserves to leave feeling genuinely beautiful. Not just styled —
+            <em>transformed</em>.
+          </p>
+          <p class="text-gray-500 mt-4 leading-relaxed">
+            Our team of passionate stylists and therapists bring together years of training,
+            an eye for detail, and a warm, welcoming approach that keeps our clients
+            coming back time and again.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-10">
+            <a href="about.html" class="btn-primary">Meet the Team</a>
+            <a href="contact.html#booking" class="btn-outline-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ════════════════════════════════════════════════════ -->
+    <section class="py-24 px-6 bg-white" aria-labelledby="testimonials-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <span class="section-label">Client Love</span>
+          <h2 id="testimonials-heading" class="font-serif text-4xl sm:text-5xl font-semibold mt-2">
+            What our clients say
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- T1 -->
+          <blockquote class="testimonial-card reveal reveal-delay-1">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Absolutely incredible experience from start to finish. The team here
+              truly understand luxury hair care. My colour has never looked this rich
+              and dimensional — I'm obsessed.
+            </p>
+            <footer class="mt-6 pt-5 border-t border-gray-100">
+              <div class="font-medium text-sm text-dark">Charlotte M.</div>
+              <div class="text-xs text-gray-400 mt-0.5">Highlights & Cut</div>
+            </footer>
+          </blockquote>
+
+          <!-- T2 -->
+          <blockquote class="testimonial-card reveal reveal-delay-2">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              I've been coming to Harlow for three years and wouldn't go anywhere else.
+              Professional, incredibly skilled, and the atmosphere is just so relaxing.
+              Always stunning results.
+            </p>
+            <footer class="mt-6 pt-5 border-t border-gray-100">
+              <div class="font-medium text-sm text-dark">Priya S.</div>
+              <div class="text-xs text-gray-400 mt-0.5">Regular Client</div>
+            </footer>
+          </blockquote>
+
+          <!-- T3 -->
+          <blockquote class="testimonial-card reveal reveal-delay-3">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Came in for a bridal package for my wedding day and they absolutely
+              delivered. Everyone kept asking who did my hair and makeup. The best
+              salon in Harlow — hands down.
+            </p>
+            <footer class="mt-6 pt-5 border-t border-gray-100">
+              <div class="font-medium text-sm text-dark">Emma L.</div>
+              <div class="text-xs text-gray-400 mt-0.5">Bridal Package</div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GALLERY PREVIEW ═════════════════════════════════════════════════ -->
+    <section class="py-24 px-6" style="background: var(--cream);" aria-labelledby="gallery-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 reveal">
+          <div>
+            <span class="section-label">Our Work</span>
+            <h2 id="gallery-heading" class="font-serif text-4xl sm:text-5xl font-semibold mt-2">
+              Results that<br><em class="font-normal">speak for themselves</em>
+            </h2>
+          </div>
+          <a href="gallery.html" class="btn-outline-dark self-start sm:self-auto shrink-0">View Gallery</a>
+        </div>
+
+        <!-- Preview grid (6 items) -->
+        <div class="gallery-grid reveal reveal-delay-1">
+          <div class="gallery-item tall" aria-label="Hair transformation">
+            <div class="gallery-item-inner ph-hair-1"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+          <div class="gallery-item" aria-label="Beauty treatment">
+            <div class="gallery-item-inner ph-beauty-1"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+          <div class="gallery-item" aria-label="Colour work">
+            <div class="gallery-item-inner ph-hair-3"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+          <div class="gallery-item" aria-label="Nail art">
+            <div class="gallery-item-inner ph-nails-1"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+          <div class="gallery-item" aria-label="Brunette styling">
+            <div class="gallery-item-inner ph-hair-2"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+          <div class="gallery-item" aria-label="Beauty treatment 2">
+            <div class="gallery-item-inner ph-beauty-2"></div>
+            <div class="gallery-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BOOKING CTA ═══════════════════════════════════════════════════════ -->
+    <section class="py-28 px-6 text-center relative overflow-hidden" style="background: var(--dark);" aria-labelledby="cta-heading">
+      <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, rgba(255,255,255,1) 0, rgba(255,255,255,1) 1px, transparent 1px, transparent 60px);" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-2xl mx-auto reveal">
+        <span class="section-label">Ready?</span>
+        <h2 id="cta-heading" class="font-serif text-white text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mt-2">
+          Ready for your<br><em class="font-normal" style="color:var(--accent)">transformation?</em>
+        </h2>
+        <p class="text-white/45 text-sm mt-6 max-w-md mx-auto leading-relaxed">
+          Book your appointment today and let our team take care of the rest.
+          Walk in — glow out.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <a href="contact.html#booking" class="btn-primary">Book an Appointment</a>
+          <a href="contact.html" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="font-serif text-white text-2xl tracking-[0.22em] font-semibold hover:text-accent transition-colors">HARLOW</a>
+          <p class="mt-4 text-sm leading-relaxed max-w-xs" style="color:rgba(255,255,255,0.45)">
+            Premium hair & beauty services in the heart of Harlow, Essex. Where beauty meets artistry.
+          </p>
+          <!-- Social icons -->
+          <div class="flex gap-4 mt-6" aria-label="Social media">
+            <a href="#" aria-label="Follow us on Instagram" class="text-white/35 hover:text-accent transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook" class="text-white/35 hover:text-accent transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on TikTok" class="text-white/35 hover:text-accent transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Navigate</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html"    class="text-sm">Home</a></li>
+            <li><a href="services.html" class="text-sm">Services</a></li>
+            <li><a href="about.html"    class="text-sm">About Us</a></li>
+            <li><a href="gallery.html"  class="text-sm">Gallery</a></li>
+            <li><a href="contact.html"  class="text-sm">Contact</a></li>
+            <li><a href="contact.html#booking" class="text-sm" style="color:var(--accent)">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Visit Us</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="leading-relaxed">[Salon Address]<br>Harlow, Essex</li>
+            <li><a href="tel:+44000000000">+44 (0) 000 000 0000</a></li>
+            <li><a href="mailto:hello@harlowbeauty.co.uk">hello@harlowbeauty.co.uk</a></li>
+            <li class="pt-2">
+              <span class="block text-white/35 text-xs tracking-widest uppercase mb-2">Hours</span>
+              <span class="block">Mon–Sat: 9:00am – 7:00pm</span>
+              <span class="block">Sunday: 10:00am – 5:00pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.08)">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-xs" style="color:rgba(255,255,255,0.3)">© 2024 Harlow Hair & Beauty. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Privacy Policy</a>
+            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

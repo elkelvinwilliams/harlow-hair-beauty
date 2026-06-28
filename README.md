@@ -44,12 +44,19 @@ to be replaced with the salon's real content.
 
 ## Local preview
 
-No build step required — Tailwind is loaded via CDN for now.
-Just open `index.html` in a browser, or run a static server:
+Tailwind is compiled to a static stylesheet (`css/tailwind.css`) — no CDN, no
+runtime build. Just open `index.html` in a browser, or run a static server:
 
 ```bash
 python3 -m http.server 8000
 # then visit http://localhost:8000
+```
+
+If you change the markup (add/remove Tailwind classes), rebuild the CSS:
+
+```bash
+npm install        # first time only
+npm run build:css  # or `npm run watch:css` while editing
 ```
 
 ## Planned pages

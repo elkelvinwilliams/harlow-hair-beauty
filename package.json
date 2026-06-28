@@ -1,0 +1,18 @@
+{
+  "name": "hagiazo-hair",
+  "version": "1.0.0",
+  "description": "Hagiazo Hair — premium multi-page salon website for Harlow, England.",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/tailwind.input.css -o css/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/tailwind.input.css -o css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elkelvinwilliams/harlow-hair-beauty.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

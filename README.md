@@ -24,8 +24,9 @@ to be replaced with the salon's real content.
 ## Content checklist (to be filled in, one by one)
 
 **Brand**
-1. [ ] Salon name + tagline
-2. [ ] Logo (file or wordmark)
+1. [x] Salon name + tagline — **Hagiazo Hair**, strapline **"Be set apart"**
+       (*Hagiazo*, verb: to sanctify, to make holy, to set apart for a special purpose)
+2. [x] Logo — supplied: interlocking double-H monogram (`assets/hagiazo-logo.jpeg`)
 3. [ ] Brand colours (hex)
 4. [ ] Fonts
 

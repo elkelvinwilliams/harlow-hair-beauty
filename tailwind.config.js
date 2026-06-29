@@ -3,7 +3,7 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     extend: {
-      colors: { accent: '#A98A66', cream: '#F7F3EC', stone: '#ECE4D8', ink: '#14110C', dark: '#14110C' },
+      colors: { accent: '#A98A66', cream: '#FAF7F1', stone: '#EFE8DD', ink: '#16120C', dark: '#241C13' },
       fontFamily: {
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
         sans:  ['Inter', 'system-ui', 'sans-serif'],

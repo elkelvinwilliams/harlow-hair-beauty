@@ -473,4 +473,26 @@ footer a:hover { color: var(--accent); }
   display: flex; align-items: center; justify-content: center;
   color: var(--accent);
   margin-bottom: 1.25rem;
+  transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+.value-icon:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-3px); }
+
+/* ─── Micro-interactions ────────────────────────────────────────────────── */
+[data-nav-link] { position: relative; }
+[data-nav-link]::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 1px; background: currentColor;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-nav-link]:hover::after { transform: scaleX(1); }
+
+.service-card { transition: transform 0.55s cubic-bezier(0.16,1,0.3,1), box-shadow 0.55s ease; }
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -32px rgba(20,17,12,0.55); }
+
+.testimonial-card { transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), box-shadow 0.45s ease; }
+.testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 22px 48px -28px rgba(20,17,12,0.45); }
+
+.info-icon { transition: border-color 0.3s ease, color 0.3s ease; }
+.info-icon:hover { border-color: var(--ink); color: var(--ink); }

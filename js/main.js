@@ -39,7 +39,7 @@ if (menuBtn && mobileMenu) {
 const page = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('[data-nav-link]').forEach(link => {
   if (link.getAttribute('href') === page) {
-    link.style.color = '#B8956A';
+    link.style.color = '#A98A66';
     link.style.opacity = '1';
   }
 });
@@ -72,12 +72,45 @@ if (filterBtns.length) {
       const cat = btn.dataset.filter;
       galleryItems.forEach(item => {
         const show = cat === 'all' || item.dataset.cat === cat;
+        clearTimeout(item._filterTimer);
         item.style.transition = 'opacity 0.35s ease';
-        item.style.opacity = show ? '1' : '0';
         item.style.pointerEvents = show ? '' : 'none';
+        if (show) {
+          item.style.display = '';
+          requestAnimationFrame(() => { item.style.opacity = '1'; });
+        } else {
+          item.style.opacity = '0';
+          // collapse the tile after the fade so the grid reflows cleanly
+          item._filterTimer = setTimeout(() => { item.style.display = 'none'; }, 350);
+        }
       });
     });
   });
+}
+
+/* ─── Animated stat counters ────────────────────────────────────────────── */
+const counters = document.querySelectorAll('.stat-num[data-count]');
+if (counters.length) {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const run = el => {
+    const target = parseInt(el.dataset.count, 10) || 0;
+    if (reduce) { el.textContent = target; return; }
+    const duration = 1400;
+    const start = performance.now();
+    const tick = now => {
+      const p = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { run(entry.target); cio.unobserve(entry.target); }
+    });
+  }, { threshold: 0.6 });
+  counters.forEach(c => cio.observe(c));
 }
 
 /* ─── Contact form (demo) ───────────────────────────────────────────────── */

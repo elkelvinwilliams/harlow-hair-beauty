@@ -128,6 +128,24 @@ if (counters.length) {
   counters.forEach(c => cio.observe(c));
 }
 
+/* ─── Floating live-chat launcher ───────────────────────────────────────── */
+const chatWidget = document.getElementById('chat-widget');
+if (chatWidget) {
+  const toggle = document.getElementById('chat-toggle');
+  const setOpen = open => {
+    chatWidget.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  };
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    setOpen(!chatWidget.classList.contains('open'));
+  });
+  document.addEventListener('click', e => {
+    if (!chatWidget.contains(e.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+}
+
 /* ─── Contact form (demo) ───────────────────────────────────────────────── */
 const form = document.getElementById('contact-form');
 if (form) {

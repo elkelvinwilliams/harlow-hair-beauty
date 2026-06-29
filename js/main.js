@@ -128,35 +128,6 @@ if (counters.length) {
   counters.forEach(c => cio.observe(c));
 }
 
-/* ─── Channel image trail (cursor-following preview) ────────────────────── */
-(() => {
-  const list = document.querySelector('.channel-list');
-  const preview = document.getElementById('cr-preview');
-  if (!list || !preview) return;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const thumb = preview.querySelector('.cr-thumb');
-  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null, active = false;
-  const loop = () => {
-    cx += (tx - cx) * 0.16;
-    cy += (ty - cy) * 0.16;
-    preview.style.left = cx + 'px';
-    preview.style.top = cy + 'px';
-    if (active || Math.abs(tx - cx) > 0.5 || Math.abs(ty - cy) > 0.5) {
-      raf = requestAnimationFrame(loop);
-    } else { raf = null; }
-  };
-  list.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; if (!raf) loop(); });
-  list.querySelectorAll('.channel-row').forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      active = true;
-      thumb.className = 'cr-thumb ' + (row.dataset.preview || 'ph-hair-1');
-      preview.classList.add('show');
-      if (!raf) loop();
-    });
-    row.addEventListener('mouseleave', () => { active = false; preview.classList.remove('show'); });
-  });
-})();
-
 /* ─── Floating live-chat launcher ───────────────────────────────────────── */
 const chatWidget = document.getElementById('chat-widget');
 if (chatWidget) {

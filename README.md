@@ -27,8 +27,14 @@ to be replaced with the salon's real content.
 1. [x] Salon name + tagline — **Hagiazo Hair**, strapline **"Be set apart"**
        (*Hagiazo*, verb: to sanctify, to make holy, to set apart for a special purpose)
 2. [x] Logo — supplied: interlocking double-H monogram (`assets/hagiazo-logo.jpeg`)
-3. [ ] Brand colours (hex)
-4. [ ] Fonts
+3. [x] Brand colours — black ink `#14110C` on warm stone `#ECE4D8` / cream `#F7F3EC`,
+       space-gray neutrals, muted bronze accent `#A98A66` (premium B&W direction)
+4. [x] Fonts — Playfair Display (serif headings) + Inter (sans body)
+
+**Positioning:** premium **braids & locs** studio for the Afro-Caribbean community in
+Harlow (box/knotless braids, cornrows, twists, starter locs & loc maintenance).
+Design inspiration: ever.co.id (editorial, minimal, lots of whitespace & motion).
+Logo: standalone HH monogram (background removed) woven through nav, hero, footer & about.
 
 **Content**
 5. [ ] About / story

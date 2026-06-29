@@ -6,7 +6,7 @@
   --accent-light: #EEEDE9;   /* light neutral panel */
   --label:        #8A847C;   /* refined grey for small labels (light & dark) */
   --ink:          #131110;   /* near-black — buttons, primary text */
-  --dark:         #130F0B;   /* deep warm brown-black — bands & footer */
+  --dark:         #0D0A07;   /* near-black warm brown — bands & footer */
   --graphite:     #45413C;   /* charcoal */
   --stone:        #ECEBE7;   /* light neutral grey — section backgrounds */
   --cream:        #FAFAF8;   /* soft near-white */
@@ -292,8 +292,8 @@ select:focus-visible {
 /* ─── Hero gradient background ──────────────────────────────────────────── */
 .hero-bg {
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.05) 0%, transparent 60%),
-    linear-gradient(160deg, #18120C 0%, #110C08 55%, #090605 100%);
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.04) 0%, transparent 60%),
+    linear-gradient(160deg, #120C08 0%, #0A0705 55%, #040302 100%);
 }
 
 /* ─── Page hero (inner pages) ───────────────────────────────────────────── */
@@ -309,8 +309,8 @@ select:focus-visible {
 }
 .page-hero-bg {
   background:
-    radial-gradient(ellipse at 50% 78%, rgba(255,255,255,0.045) 0%, transparent 62%),
-    linear-gradient(160deg, #18120C 0%, #110C08 60%, #090605 100%);
+    radial-gradient(ellipse at 50% 78%, rgba(255,255,255,0.04) 0%, transparent 62%),
+    linear-gradient(160deg, #120C08 0%, #0A0705 60%, #040302 100%);
 }
 
 /* ─── Service cards ─────────────────────────────────────────────────────── */

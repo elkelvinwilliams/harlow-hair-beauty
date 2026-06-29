@@ -45,7 +45,7 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
 
 **Practical**
 10. [ ] Address, phone, email, opening hours
-11. [ ] Social links
+11. [x] Social links — Instagram (@hagiazohair) + TikTok live; Facebook placeholder (coming soon)
 12. [ ] Booking method (external link vs built-in form vs both)
 
 ## Local preview

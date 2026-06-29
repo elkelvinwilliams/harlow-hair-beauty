@@ -6,6 +6,21 @@ if (nav) {
   onScroll();
 }
 
+/* ─── Scroll progress bar ───────────────────────────────────────────────── */
+(() => {
+  const bar = document.createElement('div');
+  bar.id = 'scroll-progress';
+  document.body.appendChild(bar);
+  const update = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+})();
+
 /* ─── Mobile menu ───────────────────────────────────────────────────────── */
 const menuBtn    = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -45,7 +60,7 @@ document.querySelectorAll('[data-nav-link]').forEach(link => {
 });
 
 /* ─── Scroll reveal (Intersection Observer) ─────────────────────────────── */
-const reveals = document.querySelectorAll('.reveal');
+const reveals = document.querySelectorAll('.reveal, .clip-reveal');
 if (reveals.length) {
   const io = new IntersectionObserver(entries => {
     entries.forEach(entry => {

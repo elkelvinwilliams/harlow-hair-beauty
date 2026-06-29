@@ -62,11 +62,13 @@ select:focus-visible {
 /* ─── Reveal animation (Intersection Observer) ──────────────────────────── */
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(32px);
+  filter: blur(6px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.9s ease;
 }
-.reveal.visible         { opacity: 1; transform: translateY(0); }
+.reveal.visible         { opacity: 1; transform: translateY(0); filter: blur(0); }
 .reveal-delay-1         { transition-delay: 0.1s; }
 .reveal-delay-2         { transition-delay: 0.2s; }
 .reveal-delay-3         { transition-delay: 0.3s; }
@@ -531,3 +533,67 @@ footer a:hover { color: var(--accent); }
 
 .info-icon { transition: border-color 0.3s ease, color 0.3s ease; }
 .info-icon:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ─── Cool animations ───────────────────────────────────────────────────── */
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px; width: 0;
+  background: var(--cream);
+  z-index: 60;
+  pointer-events: none;
+  transition: width 0.1s linear;
+}
+
+/* Clip "wipe" reveal — used on gallery tiles */
+.clip-reveal {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+}
+.clip-reveal.visible { clip-path: inset(0 0 0 0); opacity: 1; }
+.gallery-grid .clip-reveal:nth-child(2)  { transition-delay: 0.06s; }
+.gallery-grid .clip-reveal:nth-child(3)  { transition-delay: 0.12s; }
+.gallery-grid .clip-reveal:nth-child(4)  { transition-delay: 0.18s; }
+.gallery-grid .clip-reveal:nth-child(5)  { transition-delay: 0.24s; }
+.gallery-grid .clip-reveal:nth-child(6)  { transition-delay: 0.30s; }
+.gallery-grid .clip-reveal:nth-child(7)  { transition-delay: 0.18s; }
+.gallery-grid .clip-reveal:nth-child(8)  { transition-delay: 0.24s; }
+.gallery-grid .clip-reveal:nth-child(9)  { transition-delay: 0.30s; }
+.gallery-grid .clip-reveal:nth-child(10) { transition-delay: 0.18s; }
+.gallery-grid .clip-reveal:nth-child(11) { transition-delay: 0.24s; }
+.gallery-grid .clip-reveal:nth-child(12) { transition-delay: 0.30s; }
+
+/* Hero wordmark rises in behind a mask */
+@keyframes clipRise {
+  from { clip-path: inset(0 0 110% 0); transform: translateY(6%); }
+  to   { clip-path: inset(0 0 0 0);    transform: translateY(0); }
+}
+.hero-wordmark { animation: clipRise 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+
+/* Accent line draws itself in when its section reveals */
+.reveal .accent-line { width: 0; transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s; }
+.reveal.visible .accent-line { width: 44px; }
+
+/* Light sweep across buttons on hover */
+.btn-primary, .btn-cream, .btn-outline, .btn-outline-dark { position: relative; overflow: hidden; }
+.btn-primary::after, .btn-cream::after,
+.btn-outline::after, .btn-outline-dark::after {
+  content: '';
+  position: absolute; top: 0; left: -130%;
+  width: 55%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,0.22), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+.btn-primary:hover::after, .btn-cream:hover::after,
+.btn-outline:hover::after, .btn-outline-dark:hover::after { left: 130%; }
+
+/* Marquee pauses when you hover it */
+.marquee:hover .marquee__track { animation-play-state: paused; }
+.marquee__item { transition: opacity 0.3s ease; }
+.marquee:hover .marquee__item { opacity: 0.55; }
+.marquee__item:hover { opacity: 1; }

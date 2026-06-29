@@ -39,7 +39,7 @@ if (menuBtn && mobileMenu) {
 const page = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('[data-nav-link]').forEach(link => {
   if (link.getAttribute('href') === page) {
-    link.style.color = '#A98A66';
+    link.style.color = '#FAFAF8';
     link.style.opacity = '1';
   }
 });

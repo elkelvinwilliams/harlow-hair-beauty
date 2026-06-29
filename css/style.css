@@ -1,16 +1,25 @@
 /* ─── Brand tokens ──────────────────────────────────────────────────────── */
 :root {
-  --accent:       #A98A66;   /* muted warm bronze — used sparingly */
-  --accent-hover: #8C6F4F;
-  --accent-light: #EFE7D9;
-  --ink:          #16120C;   /* warm near-black — buttons, text accents */
-  --dark:         #241C13;   /* brighter warm brown — large dark bands & footer */
-  --graphite:     #2A251D;   /* space-gray, warm */
-  --stone:        #EFE8DD;   /* warm stone — section backgrounds */
-  --cream:        #FAF7F1;   /* lightest warm background */
-  --text:         #1B1712;
-  --muted:        #6E675C;   /* warm space-gray text */
-  --border:       #E6DECF;
+  /* Luxury black & white, with warm dark-brown for the dramatic sections */
+  --accent:       #2A2420;   /* near-black — lines, prices, icons (on light) */
+  --accent-hover: #3A332C;
+  --accent-light: #EEEDE9;   /* light neutral panel */
+  --label:        #8A847C;   /* refined grey for small labels (light & dark) */
+  --ink:          #131110;   /* near-black — buttons, primary text */
+  --dark:         #1A1511;   /* warm dark brown-black — bands & footer */
+  --graphite:     #45413C;   /* charcoal */
+  --stone:        #ECEBE7;   /* light neutral grey — section backgrounds */
+  --cream:        #FAFAF8;   /* soft near-white */
+  --text:         #1A1714;
+  --muted:        #6E6A64;   /* grey body secondary text */
+  --border:       #E3E1DC;
+}
+
+/* On dark backgrounds, accents & labels flip to light automatically */
+.hero-bg, .page-hero-bg, footer, .service-card-content, .bg-dark,
+[style*="var(--dark)"] {
+  --accent: rgba(250, 250, 248, 0.82);
+  --label:  rgba(250, 250, 248, 0.55);
 }
 
 /* ─── Base ──────────────────────────────────────────────────────────────── */
@@ -154,7 +163,7 @@ select:focus-visible {
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--label);
   margin-bottom: 1rem;
 }
 
@@ -273,9 +282,8 @@ select:focus-visible {
 /* ─── Hero gradient background ──────────────────────────────────────────── */
 .hero-bg {
   background:
-    radial-gradient(ellipse at 18% 60%, rgba(190,156,116,0.20) 0%, transparent 58%),
-    radial-gradient(ellipse at 85% 12%, rgba(190,156,116,0.10) 0%, transparent 48%),
-    linear-gradient(155deg, #2b2017 0%, #3c2d20 52%, #241a12 100%);
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.05) 0%, transparent 60%),
+    linear-gradient(160deg, #221C17 0%, #18130F 55%, #100C0A 100%);
 }
 
 /* ─── Page hero (inner pages) ───────────────────────────────────────────── */
@@ -291,8 +299,8 @@ select:focus-visible {
 }
 .page-hero-bg {
   background:
-    radial-gradient(ellipse at 50% 72%, rgba(190,156,116,0.16) 0%, transparent 60%),
-    linear-gradient(160deg, #2b2017 0%, #3a2c1f 60%, #241a12 100%);
+    radial-gradient(ellipse at 50% 78%, rgba(255,255,255,0.045) 0%, transparent 62%),
+    linear-gradient(160deg, #221C17 0%, #18130F 60%, #100C0A 100%);
 }
 
 /* ─── Service cards ─────────────────────────────────────────────────────── */
@@ -386,19 +394,20 @@ select:focus-visible {
 .stars { color: var(--accent); letter-spacing: 0.08em; font-size: 0.85rem; }
 
 /* ─── Placeholder gradients (stand-in for real braid / loc photography) ──── */
-.ph-hair-1  { background: linear-gradient(140deg, #3A2A1E 0%, #7A5538 45%, #C8A06A 100%); }
-.ph-hair-2  { background: linear-gradient(140deg, #2A1F16 0%, #4E3826 50%, #8A6644 100%); }
-.ph-hair-3  { background: linear-gradient(140deg, #2E2014 0%, #6E482A 50%, #C89260 100%); }
-.ph-hair-4  { background: linear-gradient(140deg, #221C14 0%, #3E3424 55%, #6E5C40 100%); }
-.ph-beauty-1{ background: linear-gradient(140deg, #2A2016 0%, #5A4028 50%, #B08456 100%); }
-.ph-beauty-2{ background: linear-gradient(140deg, #241A10 0%, #574020 50%, #BC9054 100%); }
-.ph-nails-1 { background: linear-gradient(140deg, #211C14 0%, #4A4030 55%, #94805C 100%); }
-.ph-nails-2 { background: linear-gradient(140deg, #2A2416 0%, #5A4E30 50%, #B29862 100%); }
-.ph-about   { background: linear-gradient(155deg, #3A2A1E 0%, #B89770 55%, #E3D2B8 100%); }
-.ph-team-1  { background: linear-gradient(140deg, #ECE0CF 0%, #C8A87E 100%); }
-.ph-team-2  { background: linear-gradient(140deg, #E2D3C0 0%, #B08C60 100%); }
-.ph-team-3  { background: linear-gradient(140deg, #D6C8B2 0%, #9C8058 100%); }
-.ph-hero    { background: linear-gradient(140deg, #2C2016 0%, #3A2C20 50%, #241A10 100%); }
+/* Monochrome warm-grey stand-ins (B&W with a hint of warmth) */
+.ph-hair-1  { background: linear-gradient(140deg, #2C2A27 0%, #5A554F 45%, #ABA59B 100%); }
+.ph-hair-2  { background: linear-gradient(140deg, #24221F 0%, #46423C 50%, #807A71 100%); }
+.ph-hair-3  { background: linear-gradient(140deg, #2A2724 0%, #56504A 50%, #A09890 100%); }
+.ph-hair-4  { background: linear-gradient(140deg, #222020 0%, #403C38 55%, #6E6861 100%); }
+.ph-beauty-1{ background: linear-gradient(140deg, #2A2724 0%, #524C46 50%, #9C948A 100%); }
+.ph-beauty-2{ background: linear-gradient(140deg, #262320 0%, #4E4842 50%, #A29A8F 100%); }
+.ph-nails-1 { background: linear-gradient(140deg, #232120 0%, #454039 55%, #8C857B 100%); }
+.ph-nails-2 { background: linear-gradient(140deg, #2A2724 0%, #544E47 50%, #A69D93 100%); }
+.ph-about   { background: linear-gradient(155deg, #2A2724 0%, #9A938A 55%, #D9D5CD 100%); }
+.ph-team-1  { background: linear-gradient(140deg, #E7E4DF 0%, #B4ADA3 100%); }
+.ph-team-2  { background: linear-gradient(140deg, #DEDAD3 0%, #A8A096 100%); }
+.ph-team-3  { background: linear-gradient(140deg, #D4CFC7 0%, #948C82 100%); }
+.ph-hero    { background: linear-gradient(140deg, #2A2724 0%, #3A3530 50%, #211E1B 100%); }
 
 /* ─── Services page: service rows ──────────────────────────────────────── */
 .service-row {

@@ -42,7 +42,8 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
        of the mind" thread. Craft: box braids & knotless, cornrows, locs & retwists,
        wig-making & revamps.
 6. [ ] Services + prices
-7. [ ] Team / stylists
+7. [x] Team / stylists — solo founder for now: **Ruvimbo** (founder feature on About;
+       monogram placeholder until a real photo is supplied)
 8. [ ] Photos (hero, gallery, team)
 9. [ ] Testimonials / reviews
 

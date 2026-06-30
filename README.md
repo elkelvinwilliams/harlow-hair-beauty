@@ -37,7 +37,10 @@ Design inspiration: ever.co.id (editorial, minimal, lots of whitespace & motion)
 Logo: standalone HH monogram (background removed) woven through nav, hero, footer & about.
 
 **Content**
-5. [ ] About / story
+5. [x] About / story — founder **Ruvimbo** (~15 yrs); therapist-turned-stylist,
+       "loving people through their transformation"; faith-subtle "set apart / renewing
+       of the mind" thread. Craft: box braids & knotless, cornrows, locs & retwists,
+       wig-making & revamps.
 6. [ ] Services + prices
 7. [ ] Team / stylists
 8. [ ] Photos (hero, gallery, team)

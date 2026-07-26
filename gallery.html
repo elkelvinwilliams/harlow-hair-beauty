@@ -50,11 +50,11 @@
   <main>
     <!-- ═══ PAGE HERO ═══════════════════════════════════════════════════════ -->
     <header class="page-hero page-hero-bg" aria-label="Gallery page header">
-      <div class="absolute inset-0 opacity-[0.03]" style="background-image: repeating-linear-gradient(0deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px), repeating-linear-gradient(90deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px);" aria-hidden="true"></div>
+      <div class="absolute inset-0 opacity-[0.03]" data-parallax="0.10" style="top:-120px; background-image: repeating-linear-gradient(0deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px), repeating-linear-gradient(90deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px);" aria-hidden="true"></div>
       <div class="relative z-10 text-center px-6">
-        <span class="section-label">Our Work</span>
-        <h1 class="font-serif text-white text-5xl sm:text-6xl font-semibold mt-2 leading-tight">Gallery</h1>
-        <p class="text-white/45 mt-4 text-sm max-w-md mx-auto">A selection of our favourite transformations — real results from real clients.</p>
+        <span class="section-label fade-up fade-up-1">Our Work</span>
+        <h1 class="font-serif text-white text-5xl sm:text-6xl font-semibold mt-2 leading-tight fade-up fade-up-2">Gallery</h1>
+        <p class="text-white/45 mt-4 text-sm max-w-md mx-auto fade-up fade-up-3">A selection of our favourite transformations — real results from real clients.</p>
       </div>
     </header>
 
@@ -63,7 +63,7 @@
       <div class="max-w-7xl mx-auto">
 
         <!-- Filter bar -->
-        <div class="flex flex-wrap items-center justify-center gap-3 mb-14" role="group" aria-label="Filter gallery by category">
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-14 reveal" role="group" aria-label="Filter gallery by category">
           <button class="filter-btn active" data-filter="all">All Work</button>
           <button class="filter-btn" data-filter="braids">Braids</button>
           <button class="filter-btn" data-filter="locs">Locs</button>
@@ -167,7 +167,7 @@
         </div>
 
         <!-- Note about real photos -->
-        <p class="text-center text-sm text-gray-400 mt-14">
+        <p class="text-center text-sm text-gray-400 mt-14 reveal">
           Gallery images are placeholder previews — real client photos coming soon.
           <a href="contact.html" class="underline hover:text-accent transition-colors ml-1" style="color:var(--accent)">Book your own transformation</a>.
         </p>

@@ -17,9 +17,11 @@ worked on **remotely** (cloned/checked out on any device or a cloud Claude sessi
 
 ## Status
 
-🟡 **Scaffold stage.** This is an elegant placeholder skeleton so there's something
-real to preview and iterate on remotely. All copy/images marked `TODO` are placeholders
-to be replaced with the salon's real content.
+🟢 **Live.** All five pages are built, animated, accessible (WCAG AA) and published:
+**https://elkelvinwilliams.github.io/harlow-hair-beauty/**. Business operating docs live
+in [`business/`](business/). Remaining placeholders to replace with real content: prices
+(#6), photos (#8), testimonials (#9), contact details (#10), booking method (#12).
+*(Was: "🟡 Scaffold stage — no site pages built yet.")*
 
 ## Content checklist (to be filled in, one by one)
 
@@ -27,9 +29,12 @@ to be replaced with the salon's real content.
 1. [x] Salon name + tagline — **Hagiazo Hair**, strapline **"Be set apart"**
        (*Hagiazo*, verb: to sanctify, to make holy, to set apart for a special purpose)
 2. [x] Logo — supplied: interlocking double-H monogram (`assets/hagiazo-logo.jpeg`)
-3. [x] Brand colours — black ink `#14110C` on warm stone `#ECE4D8` / cream `#F7F3EC`,
-       space-gray neutrals, muted bronze accent `#A98A66` (premium B&W direction)
-4. [x] Fonts — Playfair Display (serif headings) + Inter (sans body)
+3. [x] Brand colours — **canonical spec: [`business/02_Brand_Truth.md`](business/02_Brand_Truth.md).**
+       Monochrome near-black `#2A2420` on stone `#ECEBE7` / cream `#FAFAF8`, warm
+       near-black bands `#0D0A07`. *(Superseded the original bronze `#A98A66` on
+       `#ECE4D8`/`#F7F3EC` direction — old values preserved in BIZ-02.)*
+4. [x] Fonts — **Fraunces** (serif headings) + Inter (sans body).
+       *(Superseded Playfair Display — see BIZ-02.)*
 
 **Positioning:** premium **braids & locs** studio for the Afro-Caribbean community in
 Harlow (box/knotless braids, cornrows, twists, starter locs & loc maintenance).

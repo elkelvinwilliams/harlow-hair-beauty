@@ -15,7 +15,7 @@ financial, or brand risk, kept as living records.
 |---|---|---|---|
 | BIZ-00 | `00_Compliance.md` | HMRC, insurance, ICO/UK GDPR, H&S — what's required and its live status | 🟢 Drafted — **needs your details** |
 | BIZ-01 | `01_Privacy_and_Consent.md` | Client privacy policy (website-ready) + photo consent + data retention | 🟢 Drafted — **needs your email/address** |
-| BIZ-02 | `02_Brand_Truth.md` | The single source of truth for the brand; resolves the README-vs-code conflict | 🟢 Drafted — **one decision pending** |
+| BIZ-02 | `02_Brand_Truth.md` | The single source of truth for the brand & theme; resolves the README-vs-code conflict | 🟢 **Confirmed canonical** |
 
 ## Planned next (we build these together — they need your real inputs)
 

@@ -54,6 +54,41 @@ a rough lens for which services pay best for your chair-time, not true profit.*
 
 ---
 
+## Cornrow & Fulani Braids — *braiding hair included*
+
+Reference captured 2026-10-01; your price = reference −£5.
+
+### Fulani Braids
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Fulani Braids | 6h 00m | £145 | **£140** | £23.3 |
+| Smedium Fulani Braids | 5h 00m | £135 | **£130** | £26.0 |
+| Medium Fulani Braids | 4h 30m | £125 | **£120** | £26.7 |
+
+### Straight Backs / Cornrows (curvy braids) — *to waist length*
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| 8–10 curvy braids / straight backs | 4h 00m | £100 | **£95** | £23.8 |
+| 11–16 curvy braids / straight backs | 4h 30m | £110 | **£105** | £23.3 |
+| 17–25 straight backs / curvy braids | 5h 30m | £135 | **£130** | £23.6 |
+
+### Fulani Sew-In *(human-hair add-ons selected at booking)*
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Fulani Sew-In *(sew-in at back + Fulani front)* | 4h 00m | £90 | **£85** | £21.3 |
+| Small Fulani Side Sew-In | 5h 00m | £110 | **£105** | £21.0 |
+
+**Excluded by you (struck out on the reference — not offered):** ~~Small Lemonade Braids
+(£155)~~ · ~~Patweo Braids (£135)~~. *Confirm you want these off the menu.*
+
+### Notes
+- Pricing is consistent (~£23–27/hr gross) — tidy. **Medium/Smedium Fulani are your best
+  earners (~£26–27/hr).**
+- **Sew-ins are lowest (~£21/hr)** and involve client-selected human-hair add-ons — fine as
+  entry-level services, but make sure the **add-on hair is charged on top**, not absorbed.
+
+---
+
 ## To complete this document (send me these and I'll fill them in)
 - [ ] Prices for your **other categories** — knotless, box braids, cornrows, locs & retwists,
       wigs, kids, etc. (same format: reference price, or your price directly)

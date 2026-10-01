@@ -89,6 +89,47 @@ Reference captured 2026-10-01; your price = reference −£5.
 
 ---
 
+## French Curls — *braiding hair included (default black); boho option included in price*
+
+Reference captured 2026-10-01; your price = reference −£5.
+
+### Bob
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Bob French Curls | 5h 30m | £145 | **£140** | £25.5 |
+| Smedium Bob French Curls | 5h 00m | £135 | **£130** | £26.0 |
+| Medium Bob French Curls | 4h 30m | £125 | **£120** | £26.7 |
+
+### Mid-Back
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Mid-Back French Curls | 7h 00m | £155 | **£150** | £21.4 |
+| Smedium Mid-Back French Curls | 6h 30m | £145 | **£140** | £21.5 |
+| Medium Mid-Back French Curls | 6h 00m | £135 | **£130** | £21.7 |
+
+### Waist Length
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Waist Length French Curls | 8h 30m | £170 | **£165** | £19.4 |
+| Smedium Waist Length French Curls | 7h 30m | £160 | **£155** | £20.7 |
+| Medium Waist Length French Curls | 6h 30m | £150 | **£145** | £22.3 |
+
+### Bum Length
+| Service | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Small Bum Length French Curls | 9h 30m | £185 | **£180** | £18.9 |
+| Smedium Bum Length French Curls | 8h 30m | £175 | **£170** | £20.0 |
+| Medium Bum Length French Curls | 7h 30m | £165 | **£160** | £21.3 |
+
+### Notes
+- 🔎 **Clear margin pattern:** French-curl £/hour **falls as length grows** — bobs earn
+  ~£26/hr, but **bum-length smalls tie up a full 9½-hour day for ~£19/hr**. The headline
+  price is higher, but your *time* is worth less on the long ones.
+- **Options to consider** (your call): charge the long/waist/bum lengths a little higher,
+  or treat them as premium "full-day" bookings with a bigger deposit. Flagged, not acted on.
+
+---
+
 ## To complete this document (send me these and I'll fill them in)
 - [ ] Prices for your **other categories** — knotless, box braids, cornrows, locs & retwists,
       wigs, kids, etc. (same format: reference price, or your price directly)

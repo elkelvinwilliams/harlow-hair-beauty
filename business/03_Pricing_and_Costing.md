@@ -22,6 +22,20 @@ and price **£5 below** each equivalent service. Reference captured 2026-10-01.
 
 ---
 
+## How the sizing works *(founder clarification, 2026-10-01)*
+
+Two **separate** dimensions set the price — don't confuse them:
+
+- **Parting size — Small / Smedium / Medium:** how **fine the braids** are, i.e. how small
+  the partings are. **Small = smallest partings = the most braids = the most work**, so
+  Small is the *dearest* and takes longest; Medium is the chunkiest, quickest and cheapest.
+- **Length — Bob / Mid-Back / Waist / Bum** (Shoulder / Armpit for bobs): how far the hair falls.
+
+Price rises with **both** finer partings **and** greater length.
+*(An earlier draft mistakenly read the size prefix as "length" — corrected here.)*
+
+---
+
 ## Boho Bob Braids — *braiding hair included*
 
 **Included:** braiding hair · curled ends. **Not included:** boho (human-hair) pieces.
@@ -45,10 +59,12 @@ and price **£5 below** each equivalent service. Reference captured 2026-10-01.
 a rough lens for which services pay best for your chair-time, not true profit.*
 
 ### What this tells us (profitability lens)
-- Your **best earners per hour** are the **shoulder-length Medium/Smedium bobs** (~£24/hr).
-- The **Medium Long Bob (7h for £120 ≈ £17/hr)** is your **weakest** — longest time, lowest
-  return. 🔎 **Worth a look:** is 7h right, or should that price be higher? Smaller braids
-  usually cost *more*, yet here the biggest/longest sits lowest. Flagging for your call.
+- **Best earners per hour:** the **Medium-parting bobs** (chunkier = quicker to install) — ~£24/hr.
+- **Watch the Armpit "Medium Long Bob" (7h for £120 ≈ £17/hr)** — your lowest per-hour
+  service. Also, the reference **times look inverted** here: the finer **Small**-parting Long
+  Bob is listed *quicker* (6h) than the chunkier **Medium** (7h), which is backwards —
+  smaller partings normally take longer. 🔎 **Want to set your own realistic times** for the
+  bobs rather than inherit the reference's?
 - Once you tell me the **braiding-hair cost per style**, I'll turn gross £/hr into **real
   profit per hour** so you can see each service's true margin.
 
@@ -122,11 +138,12 @@ Reference captured 2026-10-01; your price = reference −£5.
 | Medium Bum Length French Curls | 7h 30m | £165 | **£160** | £21.3 |
 
 ### Notes
-- 🔎 **Clear margin pattern:** French-curl £/hour **falls as length grows** — bobs earn
-  ~£26/hr, but **bum-length smalls tie up a full 9½-hour day for ~£19/hr**. The headline
-  price is higher, but your *time* is worth less on the long ones.
-- **Options to consider** (your call): charge the long/waist/bum lengths a little higher,
-  or treat them as premium "full-day" bookings with a bigger deposit. Flagged, not acted on.
+- 🔎 **Clear margin pattern:** holding parting equal, French-curl £/hour **falls as length
+  grows** — bobs earn ~£26/hr. The combination of **finest partings + longest length**
+  (Small-parting Bum Length, 9½h for £180 ≈ £19/hr) is the **most total work for the lowest
+  hourly return** — the headline price is bigger, but your *time* is worth less on it.
+- **Options to consider** (your call): price the waist/bum lengths a little higher, or treat
+  them as premium "full-day" bookings with a bigger deposit. Flagged, not acted on.
 
 ---
 

@@ -16,12 +16,12 @@ financial, or brand risk, kept as living records.
 | BIZ-00 | `00_Compliance.md` | HMRC, insurance, ICO/UK GDPR, H&S — what's required and its live status | 🟢 Drafted — **needs your details** |
 | BIZ-01 | `01_Privacy_and_Consent.md` | Client privacy policy (website-ready) + photo consent + data retention | 🟢 Drafted — **needs your email/address** |
 | BIZ-02 | `02_Brand_Truth.md` | The single source of truth for the brand & theme; resolves the README-vs-code conflict | 🟢 **Confirmed canonical** |
+| BIZ-03 | `03_Pricing_and_Costing.md` | Real price list + profitability lens | 🟡 In progress — Boho Bobs captured; other categories awaited |
 
 ## Planned next (we build these together — they need your real inputs)
 
 | Ref | Document | Why it needs you |
 |---|---|---|
-| BIZ-03 | `03_Pricing_and_Costing.md` | Only you know your time-per-style and material costs |
 | BIZ-04 | `04_Booking_and_Cancellation.md` | Your deposit / no-show / lateness rules |
 | BIZ-05 | `05_Consultation_and_Aftercare.md` | Your consultation flow and per-style aftercare |
 | BIZ-06 | `06_Money_and_Direction.md` | Simple income/expense tracking + where you want this to go |

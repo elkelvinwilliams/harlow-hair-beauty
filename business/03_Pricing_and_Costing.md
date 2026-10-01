@@ -183,6 +183,43 @@ button), Waist (waist/hip), Bum.
 
 ---
 
+## Knotless Boho Braids (Standard Boho) — *braiding hair included; soft, natural volume*
+
+Reference captured 2026-10-01; your price = reference −£5. Boho (curly) extensions —
+**inclusion unclear from the truncated note ("boho extensions are…")**; confirm whether
+they're included or a paid add-on.
+
+### Small partings *(finest — most work)*
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 7h 15m | £155 | **£150** | £20.7 |
+| Waist | 8h 00m | £165 | **£160** | £20.0 |
+| Bum | 8h 45m | £175 | **£170** | £19.4 |
+
+### Smedium partings
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 5h 30m | £145 | **£140** | £25.5 |
+| Waist | 6h 00m | £155 | **£150** | £25.0 |
+| Bum | 6h 30m | £165 | **£160** | £24.6 |
+
+### Medium partings *(chunkiest — quickest)*
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 4h 30m | £135 | **£130** | £28.9 |
+| Waist | 5h 00m | £145 | **£140** | £28.0 |
+| Bum | 6h 00m | £155 | **£150** | £25.0 |
+
+### Notes
+- 💡 **Boho knotless earns MORE per hour than plain knotless.** Medium-parting boho hits
+  **~£25–29/hr** (among your best earners) vs plain knotless at ~£20/hr — because the curly
+  boho extensions build volume faster, so the install is quicker for a similar/higher price.
+- **Implication (your call):** where a client is open to it, **boho knotless is a better use
+  of your chair-time than plain knotless** — worth gently steering toward. Just confirm the
+  boho-extension inclusion so you're not giving away the curly hair for free.
+
+---
+
 ## To complete this document (send me these and I'll fill them in)
 - [ ] Prices for your **other categories** — knotless, box braids, cornrows, locs & retwists,
       wigs, kids, etc. (same format: reference price, or your price directly)

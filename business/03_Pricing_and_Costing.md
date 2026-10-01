@@ -147,6 +147,42 @@ Reference captured 2026-10-01; your price = reference −£5.
 
 ---
 
+## Knotless Braids — *braiding hair included; colours via add-ons*
+
+Reference captured 2026-10-01; your price = reference −£5. Lengths: Mid-Back (bra↔belly
+button), Waist (waist/hip), Bum.
+
+### Small partings *(finest — most work)*
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 7h 00m | £145 | **£140** | £20.0 |
+| Waist | 8h 00m | £165 | **£160** | £20.0 |
+| Bum | 9h 00m | £190 | **£185** | £20.6 |
+
+### Smedium partings
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 6h 00m | £120 | **£115** | £19.2 |
+| Waist | 7h 00m | £135 | **£130** | £18.6 |
+| Bum | 8h 00m | £155 | **£150** | £18.8 |
+
+### Medium partings *(chunkiest — quickest)*
+| Length | Time | Reference £ | **Your price (−£5)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Mid-Back | 5h 00m | £105 | **£100** | £20.0 |
+| Waist | 6h 00m | £125 | **£120** | £20.0 |
+| Bum | 7h 00m | £145 | **£140** | £20.0 |
+
+### Notes
+- 🔎 **Knotless is your lowest £/hour category — a flat ~£19–20/hr everywhere**, noticeably
+  below bob braids & Fulani (~£24–26/hr). The tickets look big (up to £185), but knotless is
+  slow, meticulous work, so the *hourly* return is your weakest. It's the service most at
+  risk of becoming a time-sink.
+- **Implication (your call):** knotless is popular, so it's a great draw — but make sure it's
+  priced for the skill it takes, and that **colour add-ons are charged on top**, not absorbed.
+
+---
+
 ## To complete this document (send me these and I'll fill them in)
 - [ ] Prices for your **other categories** — knotless, box braids, cornrows, locs & retwists,
       wigs, kids, etc. (same format: reference price, or your price directly)

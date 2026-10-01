@@ -220,6 +220,32 @@ they're included or a paid add-on.
 
 ---
 
+## Wigs — Construction  *(discount: reference −£20, NOT −£5)*
+
+⚠️ **Different discount for wigs:** you set these **£20 below** reference, not £5.
+
+| Service | Time | Reference £ | **Your price (−£20)** | Gross £/hour\* |
+|---|---|---|---|---|
+| Frontal Wig Unit (Construction) | 1h 30m | £100 | **£80** | £53.3 |
+| Closure Wig Unit (Construction) | 1h 30m | £95 | **£75** | £50.0 |
+
+**❓ Need your steer:** you struck through the reference's "includes" list — *wig
+construction, bleaching of knots, customising, basic styling (straightening), Ins…*. Does
+that mean those are **NOT** part of your construction price (offered as separate add-ons),
+or just that you'd word it differently? I won't put it on the menu until you confirm what's included.
+
+### Notes
+- 🚀 **Wigs are by far your most profitable use of time — ~£50–53/hour**, vs £20–29/hr for
+  braiding. It's fast, skilled bench work, and if the client **brings their own hair + cap**
+  (typical for a construction service), your material cost is low, so that hourly is close
+  to real profit.
+- **Strategic (big one):** wig construction doesn't tie up your chair for a whole day and
+  pays 2–2.5× your braiding hourly. It's worth **promoting hard** and could become a
+  deliberate second engine alongside braids. 🔎 Confirm: does the client supply the hair/cap,
+  or do you?
+
+---
+
 ## To complete this document (send me these and I'll fill them in)
 - [ ] Prices for your **other categories** — knotless, box braids, cornrows, locs & retwists,
       wigs, kids, etc. (same format: reference price, or your price directly)

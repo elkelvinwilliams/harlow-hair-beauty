@@ -9,22 +9,31 @@ financial, or brand risk, kept as living records.
 > framework is revisited only if a real trigger hits: **hiring staff, a second
 > location / renting chairs to others, or seeking funding.** Until then, this stays lean.
 
-## What's here
+## What's here — operating documents
 
 | Ref | Document | Purpose | Status |
 |---|---|---|---|
 | BIZ-00 | `00_Compliance.md` | HMRC, insurance, ICO/UK GDPR, H&S — what's required and its live status | 🟢 Drafted — **needs your details** |
 | BIZ-01 | `01_Privacy_and_Consent.md` | Client privacy policy (website-ready) + photo consent + data retention | 🟢 Drafted — **needs your email/address** |
-| BIZ-02 | `02_Brand_Truth.md` | The single source of truth for the brand & theme; resolves the README-vs-code conflict | 🟢 **Confirmed canonical** |
-| BIZ-03 | `03_Pricing_and_Costing.md` | Real price list + profitability lens | 🟡 In progress — Boho Bobs captured; other categories awaited |
+| BIZ-02 | `02_Brand_Truth.md` | Single source of truth for the brand & theme | 🟢 **Confirmed canonical** |
+| BIZ-03 | `03_Pricing_and_Costing.md` | Real price list + profitability lens | 🟢 6 categories captured |
+| BIZ-04 | `04_Booking_and_Cancellation.md` | Deposit / reschedule / lateness / no-show policy | 🟡 Template — **set your amounts** |
+| BIZ-05 | `05_Consultation_and_Aftercare.md` | Consultation routine + per-style aftercare | 🟢 Ready |
+| BIZ-06 | `06_Money_and_Direction.md` | Simple money rhythm + where the business is heading | 🟢 Ready |
+| BIZ-07 | `07_Business_Summary.md` | One-page overview of the whole business | 🟢 Current |
 
-## Planned next (we build these together — they need your real inputs)
+## Client-facing printables — `client/`
 
-| Ref | Document | Why it needs you |
-|---|---|---|
-| BIZ-04 | `04_Booking_and_Cancellation.md` | Your deposit / no-show / lateness rules |
-| BIZ-05 | `05_Consultation_and_Aftercare.md` | Your consultation flow and per-style aftercare |
-| BIZ-06 | `06_Money_and_Direction.md` | Simple income/expense tracking + where you want this to go |
+| Document | Purpose |
+|---|---|
+| `client/Consultation_Intake_Form.md` | Blank form for clients to complete before an appointment |
+| `client/Aftercare_Cards.md` | Take-home aftercare cards (braids · locs · wigs) |
+
+## Related
+
+| Location | What |
+|---|---|
+| `procurement/` | The Studio Equipment Acquisition Register (Excel procurement workbook) |
 
 ## How these documents work
 

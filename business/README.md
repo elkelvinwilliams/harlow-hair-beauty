@@ -22,6 +22,7 @@ financial, or brand risk, kept as living records.
 | BIZ-06 | `06_Money_and_Direction.md` | Simple money rhythm + where the business is heading | 🟢 Ready |
 | BIZ-07 | `07_Business_Summary.md` | One-page overview of the whole business | 🟢 Current |
 | BIZ-08 | `08_Hagiazo_Vision.md` | **The group vision** — Hagiazo the house & brand architecture | 🟢 Captured |
+| BIZ-09 | `09_Trademark_Guide.md` | Plain-English guide to trademarking "Hagiazo" at the UK IPO | 🟢 Ready to act on |
 
 ## Client-facing printables — `client/`
 

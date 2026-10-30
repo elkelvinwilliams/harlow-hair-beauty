@@ -17,8 +17,9 @@ A crisp one-pager you can read in a minute, or show to an accountant, bank or la
 
 | | |
 |---|---|
-| **Business** | Hagiazo Hair |
+| **Business** | Hagiazo Hair — *the first venture of Hagiazo* |
 | **What it is** | A premium braids, locs & wig studio for the Afro-Caribbean community |
+| **Part of** | **Hagiazo** — a house of ventures (Hair → Homes → Beauty, Wellness & more). See BIZ-08. |
 | **Location** | Harlow, Essex |
 | **Founder** | Ruvimbo — therapist-trained stylist, ~15 years' experience |
 | **Strapline** | *Be set apart* |
@@ -49,8 +50,11 @@ basics (compliance, privacy, pricing, booking, aftercare) are documented in this
 
 **Grow next.** Lean into **custom wigs** as a deliberate second income engine.
 
-**Not yet needed** *(revisit only on a real trigger — hiring, a second location, or funding):*
-a full-scale operating system. Today, lean is right.
+**The bigger picture.** Hagiazo Hair is **venture I of Hagiazo** — a house of ventures led by
+Ruvimbo & Elkelvin. Prove Hair, then build the house (Homes next). Full vision in BIZ-08.
+
+**Not yet needed** *(revisit only on a real trigger — a second venture, or funding):*
+a full-scale group operating system. Today, lean is right.
 
 ---
 

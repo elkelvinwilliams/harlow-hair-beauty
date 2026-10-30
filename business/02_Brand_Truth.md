@@ -37,9 +37,20 @@ the live site is the real, approved product; reverting would be a rebrand, not a
 
 ---
 
+## 0. Brand architecture — Hagiazo (parent) → Hagiazo Hair (venture)
+
+Hagiazo Hair is **the first venture of Hagiazo**, a house of ventures (Hair, then Homes,
+then more). This brand works at two levels — full detail in **BIZ-08 (The Hagiazo Vision):**
+
+- **Parent:** **HAGIAZO** — shares the name, the *set apart* ethos, the palette and voice
+  across every venture. *(Distinct parent mark to be created later.)*
+- **Ventures:** **"Hagiazo ___"**, each with an **H-based monogram** (the interlocking **HH**
+  is Hagiazo Hair). The brand system below is the **group** identity each venture inherits
+  and then tailors to its world.
+
 ## 1. Name, meaning & voice
 
-- **Name:** Hagiazo Hair · **Strapline:** *Be set apart*
+- **Name:** Hagiazo Hair *(venture of Hagiazo)* · **Strapline:** *Be set apart*
 - **Meaning:** *hagiazo* (v.) — to sanctify, to make holy, **to set apart for a special
   purpose**. The "set apart / renewing of the mind" thread is the soul of the brand.
   **Niche-critical — protected.**

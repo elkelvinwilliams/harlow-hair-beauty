@@ -19,19 +19,23 @@ you need a habit and a horizon.
 ## Part A — A simple money rhythm
 
 **Every appointment**
+
 - Log what you **took** (deposit + balance) and how (cash / transfer).
 - Keep the **receipt** for anything you buy for the business (hair, products, tools, travel).
 
 **Every week (10 minutes)**
+
 - Add up what came in and what went out. A notebook or a simple phone spreadsheet is fine.
 
 **Every month**
+
 - Move **20–30% of your profit** into a separate "**tax pot**" account so Self Assessment
   is never a shock (see BIZ-00).
 - Glance at your **best and worst earners per hour** (BIZ-03) — are you spending time on the
   profitable work?
 
 **Know your numbers (fill in when you can)**
+
 | | £ |
 |---|---|
 | Rough **cost per appointment** (hair + products + travel) | £______ |
@@ -64,9 +68,10 @@ construction — it doesn't tie up your chair all day.
 hiring someone · a second location or renting chairs to others · seeking funding.
 
 **90-day focus (write your own):**
-- 1. ______________________________________________
-- 2. ______________________________________________
-- 3. ______________________________________________
+
+1. ______________________________________________
+2. ______________________________________________
+3. ______________________________________________
 
 ---
 

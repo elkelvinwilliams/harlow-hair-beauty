@@ -53,4 +53,4 @@ with our Privacy Policy.
 
 Client signature: ______________________   Date: ____________
 
-*Hagiazo Hair · Harlow, Essex · hello@hagiazohair.co.uk*
+*Hagiazo Hair · Harlow, Essex · [hello@hagiazohair.co.uk]*

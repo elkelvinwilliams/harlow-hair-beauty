@@ -44,7 +44,7 @@ then more). This brand works at two levels — full detail in **BIZ-08 (The Hagi
 
 - **Parent:** **HAGIAZO** — shares the name, the *set apart* ethos, the palette and voice
   across every venture. *(Distinct parent mark to be created later.)*
-- **Ventures:** **"Hagiazo ___"**, each with an **H-based monogram** (the interlocking **HH**
+- **Ventures:** **"Hagiazo \_\_\_"**, each with an **H-based monogram** (the interlocking **HH**
   is Hagiazo Hair). The brand system below is the **group** identity each venture inherits
   and then tailors to its world.
 

@@ -29,7 +29,7 @@ Hagiazo    Hagiazo        Hagiazo     Hagiazo …
 ```
 
 - **Parent brand:** **HAGIAZO** — the vision, values and name the whole house shares.
-- **Ventures:** always **"Hagiazo ___"** (Hagiazo Hair, Hagiazo Homes, Hagiazo Beauty …).
+- **Ventures:** always **"Hagiazo \_\_\_"** (Hagiazo Hair, Hagiazo Homes, Hagiazo Beauty …).
 - **Marks:** each venture carries an **H-based monogram** (the interlocking **HH** is Hagiazo
   Hair today; others follow as **HB**, **H + the venture's initial**). The **parent mark is
   distinct and will be created later.**
@@ -79,7 +79,7 @@ Before Hagiazo is widely known, lock down the group's foundations:
 - [ ] **Secure the parent domains** — `hagiazo.com` / `hagiazo.co.uk` — alongside the
       venture domains.
 - [ ] **Grab the @hagiazo social handles** across Instagram, TikTok, etc., with the
-      **@hagiazo___** convention per venture (e.g. @hagiazohair). *(Handle noted: @hagiazo…)*
+      **@hagiazo\_\_\_** convention per venture (e.g. @hagiazohair). *(Handle noted: @hagiazo…)*
 - [ ] **Design the distinct parent mark** (and the venture-monogram system) so the house
       looks unified from venture II onward.
 - [ ] **Keep the brand modular** — the Brand Guideline (monogram, *set apart*, palette,

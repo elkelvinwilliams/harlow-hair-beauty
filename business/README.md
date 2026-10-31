@@ -36,6 +36,7 @@ financial, or brand risk, kept as living records.
 | Location | What |
 |---|---|
 | `procurement/` | The Studio Equipment Acquisition Register (Excel procurement workbook) |
+| `tools/premium_pdf/` | Builder for the designed PDF edition of this folder (`python3.13 build_docs.py` → covers, running headers, brand type) |
 
 ## How these documents work
 

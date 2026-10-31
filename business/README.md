@@ -24,6 +24,16 @@ financial, or brand risk, kept as living records.
 | BIZ-08 | `08_Hagiazo_Vision.md` | **The group vision** — Hagiazo the house & brand architecture | 🟢 Captured |
 | BIZ-09 | `09_Trademark_Guide.md` | Plain-English guide to trademarking "Hagiazo" at the UK IPO | 🟢 Ready to act on |
 
+## Group layer — `group/`
+
+| Ref | Document | Purpose |
+|---|---|---|
+| G00 | `group/G00_Start_Here.md` | Start Here for the Hagiazo CEO Pack (group → ventures) |
+| G01 | `group/G01_CEO_Brief.md` | The whole house on one page, with the decisions on the CEO's desk |
+| G05 | `group/G05_Venture_Charter.md` | The one-page charter every new Hagiazo venture starts from (template; built per venture) |
+
+*In the designed PDF edition, BIZ-08 (Vision), BIZ-02 (Brand) and BIZ-09 (Trademark) sit at group level as G02–G04.*
+
 ## Client-facing printables — `client/`
 
 | Document | Purpose |

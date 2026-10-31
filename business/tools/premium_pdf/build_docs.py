@@ -18,25 +18,55 @@ for d in (OUT, WORK):
     d.mkdir(exist_ok=True)
 
 # --------------------------------------------------------------------------- catalogue
-# (series, number, source, friendly file name)
+GROUP = BIZ / "group"
+HOUSE_GROUP = {"label": "Hagiazo · CEO Pack", "sub": "The house of ventures", "brand": "Hagiazo",
+               "foot": "Hagiazo · Confidential — internal working document", "pfoot": "Hagiazo"}
+HOUSE_HAIR  = {"label": "Hagiazo Hair · Operating Pack", "sub": "A venture of Hagiazo", "brand": "Hagiazo Hair",
+               "foot": "Harlow, Essex · Confidential — internal working document", "pfoot": "A venture of Hagiazo"}
+PACK = "HAGIAZO — CEO Pack"
+D_GROUP, D_HAIR = f"{PACK}/00 The Group", f"{PACK}/01 Hagiazo Hair — Venture I"
+
+# (series, number, source, friendly file name, output sub-folder, house, overrides)
 DOCS = [
-    ("Business Document", "00", BIZ / "08_Hagiazo_Vision.md",          "00 The Hagiazo Vision"),
-    ("Business Document", "01", BIZ / "07_Business_Summary.md",        "01 Business Summary"),
-    ("Business Document", "02", BIZ / "00_Compliance.md",              "02 Compliance One-Pager"),
-    ("Business Document", "03", BIZ / "01_Privacy_and_Consent.md",     "03 Privacy & Consent Policy"),
-    ("Business Document", "04", BIZ / "02_Brand_Truth.md",             "04 Brand & Theme Guideline"),
-    ("Business Document", "05", BIZ / "03_Pricing_and_Costing.md",     "05 Pricing & Costing"),
-    ("Business Document", "06", BIZ / "04_Booking_and_Cancellation.md","06 Booking & Cancellation"),
-    ("Business Document", "07", BIZ / "05_Consultation_and_Aftercare.md","07 Consultation & Aftercare"),
-    ("Business Document", "08", BIZ / "06_Money_and_Direction.md",     "08 Money & Direction"),
-    ("Business Document", "09", BIZ / "README.md",                     "09 How To Use This Pack"),
-    ("Business Document", "10", BIZ / "09_Trademark_Guide.md",         "10 Trademark Guide"),
+    ("Group Document", "G01", GROUP / "G01_CEO_Brief.md",       "G01 CEO Brief",            D_GROUP, HOUSE_GROUP, {}),
+    ("Group Document", "G02", BIZ / "08_Hagiazo_Vision.md",     "G02 The Hagiazo Vision",   D_GROUP, HOUSE_GROUP, {}),
+    ("Group Document", "G03", BIZ / "02_Brand_Truth.md",        "G03 Brand System",         D_GROUP, HOUSE_GROUP,
+        {"title": "Brand System", "subtitle": "the identity every venture inherits — single source of truth"}),
+    ("Group Document", "G04", BIZ / "09_Trademark_Guide.md",    "G04 Trademark Guide",      D_GROUP, HOUSE_GROUP, {}),
+    ("Operations", "01", BIZ / "07_Business_Summary.md",         "01 Business Summary",        f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "02", BIZ / "00_Compliance.md",               "02 Compliance One-Pager",    f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "03", BIZ / "01_Privacy_and_Consent.md",      "03 Privacy & Consent Policy",f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "04", BIZ / "03_Pricing_and_Costing.md",      "04 Pricing & Costing",       f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "05", BIZ / "04_Booking_and_Cancellation.md", "05 Booking & Cancellation",  f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "06", BIZ / "05_Consultation_and_Aftercare.md","06 Consultation & Aftercare",f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "07", BIZ / "06_Money_and_Direction.md",      "07 Money & Direction",       f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR, {}),
+    ("Operations", "08", BIZ / "README.md",                      "08 How To Use This Pack",    f"{D_HAIR}/Operations (PDF)", HOUSE_HAIR,
+        {"title": "How To Use This Pack", "subtitle": "how the documents work together, and the tags they use",
+         "control": {"Status": "🟢 Current", "Owners": "Ruvimbo & Elkelvin", "Date": "2026-10-31", "Review cycle": "When a document is added"}}),
+    ("CEO Pack", "", GROUP / "G00_Start_Here.md", "START HERE", PACK, HOUSE_GROUP, {}),
 ]
 PRINTABLES = [
-    ("form",  BIZ / "client/Consultation_Intake_Form.md", "Consultation & Intake Form"),
-    ("cards", BIZ / "client/Aftercare_Cards.md",          "Aftercare Cards"),
+    ("form",  BIZ / "client/Consultation_Intake_Form.md", "Consultation & Intake Form", f"{D_HAIR}/Client Printables (PDF)"),
+    ("cards", BIZ / "client/Aftercare_Cards.md",          "Aftercare Cards",            f"{D_HAIR}/Client Printables (PDF)"),
 ]
-START_HERE = HERE / "start_here.md"
+# Venture charters — only confirmed facts are pre-filled; everything else is a fill-in field.
+CHARTER = GROUP / "G05_Venture_Charter.md"
+ENV = lambda world: {"NUMERAL": "Envisioned venture", "STATUS": "◻ Envisioned — charter not yet started", "STATUS_WORD": "Envisioned",
+                     "WORLD": world, "LEAD": "[lead to confirm]"}
+VENTURES = [
+    ("blank", "Hagiazo \\_\\_\\_", "", f"{D_GROUP}", "G05 Venture Charter (blank)",
+        {"NUMERAL": "[position in the house]", "STATUS": "◻ Template — blank", "STATUS_WORD": "[stage]", "WORLD": "[world]", "LEAD": "[lead]", "HANDLE": "\\_\\_\\_"}),
+    ("homes", "Hagiazo Homes", "II", f"{PACK}/02 Hagiazo Homes — Venture II", "Venture Charter — Hagiazo Homes",
+        {"NUMERAL": "Venture II", "STATUS": "🟡 Next — charter open", "STATUS_WORD": "Next", "WORLD": "Home & living", "LEAD": "Ruvimbo & Elkelvin", "HANDLE": "homes"}),
+    ("beauty",     "Hagiazo Beauty",     "", f"{PACK}/Future Ventures/Hagiazo Beauty",     "Venture Charter — Hagiazo Beauty",     {**ENV("Beauty"), "HANDLE": "beauty"}),
+    ("wellness",   "Hagiazo Wellness",   "", f"{PACK}/Future Ventures/Hagiazo Wellness",   "Venture Charter — Hagiazo Wellness",   {**ENV("Wellness"), "HANDLE": "wellness"}),
+    ("homeware",   "Hagiazo Homeware",   "", f"{PACK}/Future Ventures/Hagiazo Homeware",   "Venture Charter — Hagiazo Homeware",   {**ENV("Homeware"), "HANDLE": "homeware"}),
+    ("studios",    "Hagiazo Studios",    "", f"{PACK}/Future Ventures/Hagiazo Studios",    "Venture Charter — Hagiazo Studios",    {**ENV("Studios / creative"), "HANDLE": "studios"}),
+    ("everything", "Hagiazo Everything", "", f"{PACK}/Future Ventures/Hagiazo Everything", "Venture Charter — Hagiazo Everything", {**ENV("[world to confirm]"), "HANDLE": "everything"}),
+    ("holdings",   "Hagiazo Holdings",   "", f"{PACK}/Future Ventures/Hagiazo Holdings",   "Venture Charter — Hagiazo Holdings",
+        {"NUMERAL": "Future structure", "STATUS": "◻ Future structure — forms on a trigger", "STATUS_WORD": "Future structure",
+         "WORLD": "The entity that will own the ventures", "LEAD": "Ruvimbo & Elkelvin", "HANDLE": "holdings"}),
+]
 
 # --------------------------------------------------------------------------- assets
 def b64(path, mime="image/png"):
@@ -220,7 +250,7 @@ p{margin:0 0 7pt}
 EMOJI = {
     "🟢": '<span class="dot dot-g"></span>', "🟡": '<span class="dot dot-a"></span>',
     "🔴": '<span class="dot dot-r"></span>', "⚪": '<span class="dot dot-n"></span>',
-    "⏳": '<span class="dot dot-a"></span>', "⚠️": '<span class="warn">!</span>', "⚠": '<span class="warn">!</span>',
+    "⏳": '<span class="dot dot-a"></span>', "◻": '<span class="dot dot-n"></span>', "⚠️": '<span class="warn">!</span>', "⚠": '<span class="warn">!</span>',
     "✅": '<span class="tick">✓</span>', "❌": '<span class="cross">✕</span>', "☐": '<span class="box"></span>',
     "✦": "✦", "→": "→",
 }
@@ -264,8 +294,8 @@ def parse_doc(md_text):
         ln = lines[i]
         if not title and ln.startswith("# "):
             t = ln[2:].strip()
-            m = re.match(r"^(?:BIZ-\d+\s+—\s+)?(.*?)\s*(?:\*\((.*?)\)\*)?\s*$", t)
-            title, subtitle = m.group(1), (m.group(2) or "")
+            m = re.match(r"^(?:(?:BIZ-|G)\d+\s+—\s+)?(.*?)\s*(?:\*\((.*?)\)\*)?\s*$", t)
+            title, subtitle = m.group(1).replace("\\_", "_"), (m.group(2) or "")
             i += 1; continue
         if ln.startswith("> **Document control**"):
             i += 1
@@ -313,7 +343,7 @@ def md_to_html(md):
     return h
 
 def control_value(v):
-    v = transform_inline(v)
+    v = transform_inline(v).replace("\\_", "_")
     v = re.sub(r"\*\*(.+?)\*\*", r"\1", v)
     v = re.sub(r"\*(.+?)\*", r"<em>\1</em>", v)
     v = re.sub(r"\[(.+?)\]\((.+?)\)", r"\1", v)
@@ -331,13 +361,13 @@ def italic_accent(title):
     return html.escape(title)
 
 # --------------------------------------------------------------------------- html assembly
-def cover_html(series, num, title, subtitle, control):
+def cover_html(series, num, title, subtitle, control, house):
     keys = [k for k in ("Status", "Owner", "Owners", "Date", "Review cycle") if k in control][:4]
     meta = "".join(f'<div><div class="k">{html.escape(k)}</div><div class="v">{control_value(control[k])}</div></div>' for k in keys)
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{COVER_CSS}</style></head><body>
 <div class="frame"></div>
 <img class="mono" src="{HH_LIGHT}" alt="">
-<div class="house"><span class="label">Hagiazo Hair · Operating Pack</span><div class="sub">A venture of Hagiazo</div></div>
+<div class="house"><span class="label">{house["label"]}</span><div class="sub">{house["sub"]}</div></div>
 <div class="num">{num}</div>
 <div class="titleblock">
   <span class="label">{html.escape(series)} {num}</span>
@@ -346,7 +376,7 @@ def cover_html(series, num, title, subtitle, control):
   <p class="subtitle">{html.escape(subtitle) if subtitle else ""}</p>
 </div>
 <div class="meta">{meta}</div>
-<div class="foot"><span class="label">Harlow, Essex · Confidential — internal working document</span><span class="strap">Be set apart</span></div>
+<div class="foot"><span class="label">{house["foot"]}</span><span class="strap">Be set apart</span></div>
 </body></html>"""
 
 def body_html(title, control, content):
@@ -360,14 +390,15 @@ def body_html(title, control, content):
 {strip}{content}
 </div></body></html>"""
 
-def header_tpl(title):
+def header_tpl(title, house):
     return f"""<div style="font-family:Inter,sans-serif;font-size:6.4pt;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#8A847C;
  width:100%;padding:0 22mm;margin-top:11mm;display:flex;justify-content:space-between;-webkit-print-color-adjust:exact">
- <span>{html.escape(title)}</span><span>Hagiazo Hair</span></div>"""
+ <span>{html.escape(title)}</span><span>{house["brand"]}</span></div>"""
 
-FOOTER_TPL = """<div style="font-family:Inter,sans-serif;font-size:6.4pt;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#8A847C;
+def footer_tpl(house):
+    return f"""<div style="font-family:Inter,sans-serif;font-size:6.4pt;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#8A847C;
  width:100%;padding:0 22mm;margin-bottom:11mm;display:flex;justify-content:space-between;-webkit-print-color-adjust:exact">
- <span>A venture of Hagiazo &nbsp;·&nbsp; <span style="font-family:Fraunces,Georgia,serif;font-style:italic;text-transform:none;letter-spacing:0;font-size:8pt;font-weight:400">Be set apart</span></span>
+ <span>{house["pfoot"]} &nbsp;·&nbsp; <span style="font-family:Fraunces,Georgia,serif;font-style:italic;text-transform:none;letter-spacing:0;font-size:8pt;font-weight:400">Be set apart</span></span>
  <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span></div>"""
 
 # --------------------------------------------------------------------------- printables
@@ -408,38 +439,39 @@ def printable_html(kind, md_text, name):
 
 # --------------------------------------------------------------------------- jobs
 jobs = []
-def add_doc(series, num, src, friendly, out_dir):
-    title, subtitle, control, body = parse_doc(src.read_text())
-    if src.name == "README.md":
-        title, subtitle = "How To Use This Pack", "how the documents work together, and the tags they use"
-        control = {"Status": "🟢 Current", "Owners": "Ruvimbo & Elkelvin", "Date": "2026-10-31", "Review cycle": "When a document is added"}
-    stem = re.sub(r"[^\w]+", "_", friendly)
-    (WORK / f"{stem}.cover.html").write_text(cover_html(series, num, title, subtitle, control))
+def add_doc(series, num, src, friendly, out_dir, house, over=None, subs=None):
+    text = src.read_text()
+    for k, v in (subs or {}).items():
+        text = text.replace("{{" + k + "}}", v)
+    title, subtitle, control, body = parse_doc(text)
+    over = over or {}
+    title = over.get("title", title); subtitle = over.get("subtitle", subtitle); control = over.get("control", control)
+    out_dir = OUT / out_dir; out_dir.mkdir(parents=True, exist_ok=True)
+    stem = re.sub(r"[^\w]+", "_", f"{out_dir.name}_{friendly}")
+    (WORK / f"{stem}.cover.html").write_text(cover_html(series, num, title, subtitle, control, house))
     (WORK / f"{stem}.body.html").write_text(body_html(title, control, md_to_html(body)))
     jobs.append({"kind": "doc", "cover": str(WORK / f"{stem}.cover.html"), "body": str(WORK / f"{stem}.body.html"),
-                 "header": header_tpl(f"{num} · {title}"), "footer": FOOTER_TPL,
+                 "header": header_tpl(f"{num} · {title}" if num else title, house), "footer": footer_tpl(house),
                  "out": str(out_dir / f"{friendly}.pdf")})
 
 def add_printable(kind, src, friendly, out_dir):
+    out_dir = OUT / out_dir; out_dir.mkdir(parents=True, exist_ok=True)
     stem = re.sub(r"[^\w]+", "_", friendly)
     (WORK / f"{stem}.html").write_text(printable_html(kind, src.read_text(), friendly))
     jobs.append({"kind": "print", "body": str(WORK / f"{stem}.html"), "out": str(out_dir / f"{friendly}.pdf")})
 
 def main():
-    docs_dir = OUT / "Business Documents (PDF)"; docs_dir.mkdir(exist_ok=True)
-    cl_dir = OUT / "Client Printables (PDF)"; cl_dir.mkdir(exist_ok=True)
     only = sys.argv[1:]
-    for series, num, src, friendly in DOCS:
-        if only and not any(o in friendly for o in only): continue
-        add_doc(series, num, src, friendly, docs_dir)
-    for kind, src, friendly in PRINTABLES:
-        if only and not any(o in friendly for o in only): continue
-        add_printable(kind, src, friendly, cl_dir)
-    if START_HERE.exists() and (not only or any("START" in o for o in only)):
-        add_doc("Operating Pack", "", START_HERE, "START HERE", OUT)
+    want = lambda name: not only or any(o.lower() in name.lower() for o in only)
+    for series, num, src, friendly, sub, house, over in DOCS:
+        if want(friendly): add_doc(series, num, src, friendly, sub, house, over)
+    for kind, src, friendly, sub in PRINTABLES:
+        if want(friendly): add_printable(kind, src, friendly, sub)
+    for key, venture, num, sub, friendly, vals in VENTURES:
+        if want(friendly): add_doc("Venture Charter", num, CHARTER, friendly, sub, HOUSE_GROUP, None, {"VENTURE": venture, **vals})
     (WORK / "jobs.json").write_text(json.dumps(jobs))
     subprocess.run(["node", str(HERE / "render.js"), str(WORK / "jobs.json")], check=True)
-    print(f"built {len(jobs)} pdf(s) → {OUT}")
+    print(f"built {len(jobs)} pdf(s) → {OUT / PACK}")
 
 if __name__ == "__main__":
     main()

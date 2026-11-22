@@ -26,8 +26,8 @@ Fill the `[bracketed]` fields before publishing.
 **Hagiazo Hair — Privacy Policy**
 *Last updated: [DATE]*
 
-**Who we are.** Hagiazo Hair ("we", "us") is a braids & locs studio based in Harlow,
-Essex. For any privacy question, contact us at **[hello@hagiazohair.co.uk]**.
+**Who we are.** Hagiazo Hair ("we", "us") is a braids & locs studio based in Tottenham,
+London. For any privacy question, contact us at **[hello@hagiazohair.co.uk]**.
 
 **What we collect.** When you enquire or book, we may collect: your **name**, **phone
 number**, **email**, the **service** you want, **appointment history and notes** (e.g.

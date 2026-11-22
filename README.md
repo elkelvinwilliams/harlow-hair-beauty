@@ -1,6 +1,7 @@
 # Harlow Hair & Beauty — Salon Website
 
-A premium, multi-page marketing website for a hair & beauty salon in Harlow, England,
+A premium, multi-page marketing website for a hair & beauty studio in Tottenham, London
+(formerly Harlow, England),
 built around taking bookings. This repo is the starting point so the project can be
 worked on **remotely** (cloned/checked out on any device or a cloud Claude session).
 
@@ -8,7 +9,7 @@ worked on **remotely** (cloned/checked out on any device or a cloud Claude sessi
 
 | Decision        | Choice                                                        |
 |-----------------|---------------------------------------------------------------|
-| Business        | Hair & beauty salon, Harlow, England                          |
+| Business        | Hair & beauty studio, Tottenham, London (moved from Harlow)    |
 | Primary goal    | Take bookings / appointments                                  |
 | Style direction | Elegant & premium                                             |
 | Tech stack      | HTML + Tailwind CSS                                           |
@@ -37,7 +38,9 @@ in [`business/`](business/). Remaining placeholders to replace with real content
        *(Superseded Playfair Display — see BIZ-02.)*
 
 **Positioning:** premium **braids & locs** studio for the Afro-Caribbean community in
-Harlow (box/knotless braids, cornrows, twists, starter locs & loc maintenance).
+Tottenham, London. The venue works two ways: clients book a chair with Ruvimbo, and
+independent stylists can **hire a chair** (see `contact.html#chair-hire`). Craft: box/knotless
+braids, cornrows, twists, starter locs & loc maintenance. *(Previously Harlow, Essex.)*
 Design inspiration: ever.co.id (editorial, minimal, lots of whitespace & motion).
 Logo: standalone HH monogram (background removed) woven through nav, hero, footer & about.
 
@@ -53,7 +56,9 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
 9. [ ] Testimonials / reviews
 
 **Practical**
-10. [ ] Address, phone, email, opening hours
+10. [~] Address, phone, email, opening hours — **address supplied:** Studio 40, Unit 6
+        Creative Workers, Fountayne Road, Tottenham, London (postcode TBC). Phone, email
+        and hours still placeholders.
 11. [x] Social links — Instagram (@hagiazohair) + TikTok live; Facebook placeholder (coming soon)
 12. [ ] Booking method (external link vs built-in form vs both)
 

@@ -3,487 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hagiazo Hair — premium braids and locs in Tottenham, London. Box braids, knotless braids, cornrows, starter locs and loc maintenance. Book today.">
-  <title>Hagiazo Hair | Premium Braids & Locs, Tottenham, London</title>
-  <link rel="stylesheet" href="css/tailwind.css">
+  <meta name="description" content="Hagiazo Hair — a premium braids, locs and wig studio in Tottenham, London. Knotless braids, boho bob braids, Fulani, French curls and custom wigs, by appointment.">
+  <meta name="theme-color" content="#0D0A07">
+  <title>Hagiazo Hair | Premium Braids, Locs &amp; Wigs in Tottenham, London</title>
+  <link rel="icon" href="assets/hh-light.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body class="font-sans bg-cream text-dark">
-
-  <!-- ═══ NAVIGATION ════════════════════════════════════════════════════════ -->
-  <nav id="site-nav" aria-label="Main navigation">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-
-        <!-- Logo -->
-        <a href="index.html" class="nav-mark" aria-label="Hagiazo Hair home"><img src="assets/hh-light.png" alt="" aria-hidden="true"><span class="wordmark">HAGIAZO<span class="wordmark-sub">Hair</span></span></a>
-
-        <!-- Desktop links -->
-        <div class="hidden md:flex items-center gap-8" role="list">
-          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Home</a>
-          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Services</a>
-          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">About</a>
-          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Gallery</a>
-          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2" role="listitem">Contact</a>
-        </div>
-
-        <!-- CTA + hamburger -->
-        <div class="flex items-center gap-4">
-          <a href="contact.html#booking" class="btn-cream !hidden sm:!inline-flex text-sm px-5 py-2.5">Book Now</a>
-          <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"
-                  class="md:hidden text-white p-2 -mr-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
-            <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/>
-            </svg>
-            <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="hidden" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div id="mobile-menu" role="navigation" aria-label="Mobile menu">
-        <div class="pb-6 pt-2 flex flex-col gap-1 border-t border-white/10">
-          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Home</a>
-          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Services</a>
-          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">About</a>
-          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Gallery</a>
-          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Contact</a>
-          <a href="contact.html#booking" class="btn-cream text-center mt-3">Book an Appointment</a>
-        </div>
+<body>
+  <!-- ═══ HEADER ═══════════════════════════════════════════════════════════ -->
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand" aria-label="Hagiazo Hair — home"><img src="assets/hh-light.png" alt="" width="160" height="184"><span class="wordmark">HAGIAZO<small>Hair</small></span></a>
+      <nav class="nav-desktop" aria-label="Main navigation"><a href="index.html" data-nav>Home</a><a href="services.html" data-nav>Services</a><a href="our-work.html" data-nav>Our Work</a><a href="testimonials.html" data-nav>Testimonials</a><a href="about.html" data-nav>About</a><a href="faqs.html" data-nav>FAQs</a><a href="contact.html" data-nav>Contact</a></nav>
+      <div class="header-row" style="gap:1rem">
+        <a href="booking.html" class="btn sm header-cta" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book now</a>
+        <button id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       </div>
     </div>
+  </header>
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="row" data-nav>Home<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="services.html" class="row" data-nav>Services<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="our-work.html" class="row" data-nav>Our Work<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="testimonials.html" class="row" data-nav>Testimonials<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="about.html" class="row" data-nav>About<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="faqs.html" class="row" data-nav>FAQs<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="contact.html" class="row" data-nav>Contact<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+    <div class="mob-foot"><a href="booking.html" class="btn" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book an appointment</a><span class="tiny">Tottenham, London · by appointment</span></div>
   </nav>
 
   <main>
-    <!-- ═══ HERO ════════════════════════════════════════════════════════════ -->
-    <section class="hero-bg relative flex items-center justify-center min-h-screen text-center px-6" aria-label="Hero">
-      <!-- Subtle decorative grid overlay (gentle parallax drift) -->
-      <div class="absolute inset-0 opacity-[0.03]" data-parallax="0.12" style="top:-140px; background-image: repeating-linear-gradient(0deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px), repeating-linear-gradient(90deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px);" aria-hidden="true"></div>
-
-      <div class="relative z-10 max-w-3xl mx-auto pt-24">
-        <img src="assets/hh-light.png" alt="Hagiazo Hair monogram" class="float-slow mx-auto mb-7 h-20 sm:h-24 w-auto" width="160" height="184">
-        <span class="section-label fade-up fade-up-1" style="color: var(--accent);">Premium Braids &amp; Locs · Tottenham, London</span>
-
-        <h1 class="font-serif text-white font-semibold mt-2 leading-none tracking-tight hero-wordmark" style="font-size: clamp(3.5rem, 10vw, 8rem);">
-          <span>HAGIAZO</span><span class="hero-wordmark-sub">Hair</span>
-        </h1>
-        <p class="font-serif text-white/60 italic mt-2 fade-up fade-up-2" style="font-size: clamp(1.1rem, 2.5vw, 1.5rem);">
-          Be set apart
-        </p>
-        <p class="text-white/55 text-sm sm:text-base mt-6 max-w-lg mx-auto leading-relaxed font-light fade-up fade-up-3">
-          A premium braiding &amp; loc studio in the heart of Tottenham — box &amp; knotless braids,
-          cornrows, starter locs and loc maintenance, crafted with patience and precision.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 fade-up fade-up-4">
-          <a href="contact.html#booking" class="btn-cream">Book an Appointment</a>
-          <a href="services.html" class="btn-outline">Explore Services</a>
-        </div>
-
-        <!-- Stats -->
-        <div class="flex items-center justify-center gap-10 mt-16 pt-10 border-t border-white/10">
-          <div class="text-center">
-            <div class="font-serif text-white text-2xl font-semibold"><span class="stat-num" data-count="15">0</span><span style="color:var(--accent)">+</span></div>
-            <div class="text-white/55 text-xs tracking-widest uppercase mt-1">Years Experience</div>
-          </div>
-          <div class="w-px h-10 bg-white/15" aria-hidden="true"></div>
-          <div class="text-center">
-            <div class="font-serif text-white text-2xl font-semibold"><span class="stat-num" data-count="6">0</span></div>
-            <div class="text-white/55 text-xs tracking-widest uppercase mt-1">Signature Services</div>
-          </div>
-          <div class="w-px h-10 bg-white/15" aria-hidden="true"></div>
-          <div class="text-center">
-            <div class="font-serif text-white text-2xl font-semibold"><span class="stat-num" data-count="100">0</span><span style="color:var(--accent)">%</span></div>
-            <div class="text-white/55 text-xs tracking-widest uppercase mt-1">Afro-Textured Care</div>
-          </div>
-        </div>
+    <!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero-media" data-slot="hero-photo" data-parallax="0.12"><div class="ph"></div></div>
+      <div class="hero-inner hero-stack">
+        <img src="assets/hh-light.png" alt="Hagiazo Hair monogram" class="hero-mark fade-up d1" width="160" height="184">
+        <span class="eyebrow fade-up d2" style="color:rgba(250,250,248,.7)">Hagiazo Hair · Tottenham, London</span>
+        <h1 class="display fade-up d3">Be <em>set apart</em></h1>
+        <span class="rule fade-up d4"></span>
+        <p class="lead fade-up d5">A premium braids, locs &amp; wig studio for the Afro-Caribbean community — knotless, Fulani, French curls and custom wigs, crafted with patience and precision by a therapist-trained stylist.</p>
+        <div class="btn-row center fade-up d6"><a href="booking.html" class="btn" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book an appointment</a><a href="services.html" class="btn secondary">Explore services<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
+      <div class="scroll-cue fade-up d6" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
 
-      <!-- Scroll indicator -->
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 scroll-indicator" aria-hidden="true">
-        <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="18" height="26" rx="9" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-          <circle cx="10" cy="8" r="2.5" fill="rgba(255,255,255,0.55)"/>
-        </svg>
+    <!-- ═══ STATS ══════════════════════════════════════════════════════════ -->
+    <section class="band-2 section tight" aria-label="At a glance">
+      <div class="container stats reveal">
+        <div class="stat"><div class="num"><span class="stat-num" data-count="15">0</span><sup>+</sup></div><span class="tiny">Years of craft</span></div>
+        <div class="stat"><div class="num"><span class="stat-num" data-count="6">0</span></div><span class="tiny">Signature styles</span></div>
+        <div class="stat"><div class="num">1:1</div><span class="tiny">One chair, one client</span></div>
+        <div class="stat"><div class="num"><span class="stat-num" data-count="100">0</span><sup>%</sup></div><span class="tiny">Afro-textured care</span></div>
       </div>
     </section>
 
-    <!-- ═══ MARQUEE ═════════════════════════════════════════════════════════ -->
-    <div class="marquee py-6 border-y" style="background:var(--stone); border-color:var(--border);" aria-hidden="true">
-      <div class="marquee__track">
-        <span class="marquee__item">Knotless Braids</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Box Braids</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Faux Locs</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Cornrows</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Starter Locs</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Passion Twists</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Loc Retwists</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Protective Styles</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Knotless Braids</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Box Braids</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Faux Locs</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Cornrows</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Starter Locs</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Passion Twists</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Loc Retwists</span><span class="marquee__dot">✦</span>
-        <span class="marquee__item">Protective Styles</span><span class="marquee__dot">✦</span>
-      </div>
-    </div>
+    <!-- ═══ MARQUEE ════════════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true"><div class="track"><span>Knotless Braids</span><span>Boho Bob Braids</span><span>Cornrow & Fulani</span><span>French Curls</span><span>Knotless Boho</span><span>Custom Wigs</span><span>Locs & Retwists</span><span>Scalp-first care</span><span>Braiding hair included</span><span>Tottenham, London</span></div></div>
 
-    <!-- ═══ SERVICES PREVIEW ════════════════════════════════════════════════ -->
-    <section class="py-24 px-6 bg-white" aria-labelledby="services-heading">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 reveal">
-          <span class="section-label">What We Offer</span>
-          <h2 id="services-heading" class="font-serif text-4xl sm:text-5xl font-semibold leading-tight mt-2">
-            Protective styling,<br><em class="font-normal">perfected</em>
-          </h2>
-          <p class="text-gray-500 mt-5 max-w-md mx-auto text-sm leading-relaxed">
-            From knotless braids to starter locs, every style is installed with patience,
-            precision and real care for your hair and scalp.
-          </p>
+    <!-- ═══ INTRO ══════════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="intro-h">
+      <div class="container grid-12 center">
+        <div class="col-6 reveal">
+          <span class="eyebrow">Our story</span>
+          <h2 id="intro-h" class="h-sec">Service beyond <em>expectation</em></h2>
+          <span class="rule left"></span>
+          <p class="lead">Hagiazo was founded on one belief: that protective styling is an art form, and every head of hair deserves to be treated as something <em class="serif">set apart</em>.</p>
+          <p class="lead sm" style="margin-top:1.2rem">We specialise in braids, locs and wigs for the Afro-Caribbean community — authentic technique, healthy-hair care and a calm, unhurried chair that keeps clients coming back time and again.</p>
+          <div class="btn-row" style="margin-top:2rem"><a href="about.html" class="btn">Meet Ruvimbo<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
+        <div class="col-6 reveal d2"><div class="media r-4-5 kb" data-slot="intro-portrait"><div class="ph v2"></div><span class="slot-tag">Photo coming soon</span></div></div>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <!-- Hair -->
-          <article class="service-card h-[480px] reveal reveal-delay-1">
-            <div class="service-card-bg ph-hair-1"></div>
-            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
-              <span class="section-label" style="color: var(--accent);">01</span>
-              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Knotless &amp; Box Braids</h3>
-              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
-                Knotless, box and jumbo braids in every length — lightweight, neat and built to last.
-              </p>
-              <a href="services.html#braids" class="btn-outline text-xs px-5 py-2.5 self-start">From £70</a>
-            </div>
+    <!-- ═══ SERVICES ═══════════════════════════════════════════════════════ -->
+    <section class="section band-2" aria-labelledby="svc-h">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">What we offer</span><h2 id="svc-h" class="h-sec">Six signature <em>styles</em></h2><span class="rule"></span><p class="lead">Every style is installed with deliberate precision, premium pre-stretched braiding hair, and an uncompromising focus on scalp comfort.</p></div>
+        <div class="grid-3">
+          <article class="service-card zoom reveal d1">
+            <div class="media r-16-10" data-slot="service-boho-bob"><div class="ph "></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">01</span><span class="media-price">from £110</span></div>
+            <h3 class="h-card">Boho Bob Braids</h3>
+            <p class="desc">The on-trend bob with soft, curled ends — playful, lightweight and endlessly flattering.</p>
+            <p class="inc">Braiding hair & curled ends included. Boho pieces not included.</p>
+            <div class="foot"><a href="booking.html?service=boho-bob" class="btn sm" data-book="boho-bob">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#boho-bob" class="link-plain">View sizes</a></div>
           </article>
-
-          <!-- Beauty -->
-          <article class="service-card h-[480px] sm:mt-10 reveal reveal-delay-2">
-            <div class="service-card-bg ph-beauty-1"></div>
-            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
-              <span class="section-label" style="color: var(--accent);">02</span>
-              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Locs &amp; Maintenance</h3>
-              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
-                Starter locs, retwists, styling and repairs — nurtured at every stage of your loc journey.
-              </p>
-              <a href="services.html#locs" class="btn-outline text-xs px-5 py-2.5 self-start">From £45</a>
-            </div>
+          <article class="service-card zoom reveal d2">
+            <div class="media r-16-10" data-slot="service-fulani"><div class="ph v2"></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">02</span><span class="media-price">from £85</span></div>
+            <h3 class="h-card">Cornrow & Fulani Braids</h3>
+            <p class="desc">Intricate Fulani patterns, clean straight-backs and sleek sew-ins — artistry that sits close and lasts.</p>
+            <p class="inc">Braiding hair included. Sew-in add-on hair charged separately.</p>
+            <div class="foot"><a href="booking.html?service=fulani" class="btn sm" data-book="fulani">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#fulani" class="link-plain">View sizes</a></div>
           </article>
-
-          <!-- Nails -->
-          <article class="service-card h-[480px] reveal reveal-delay-3">
-            <div class="service-card-bg ph-nails-1"></div>
-            <div class="service-card-content absolute inset-0 flex flex-col justify-end p-8">
-              <span class="section-label" style="color: var(--accent);">03</span>
-              <h3 class="font-serif text-white text-2xl font-semibold mt-1">Cornrows &amp; Protective Styles</h3>
-              <p class="text-white/60 text-sm mt-2 mb-5 leading-relaxed">
-                Feed-in cornrows, stitch braids and bespoke protective styles for all ages.
-              </p>
-              <a href="services.html#cornrows" class="btn-outline text-xs px-5 py-2.5 self-start">From £40</a>
-            </div>
+          <article class="service-card zoom reveal d3">
+            <div class="media r-16-10" data-slot="service-french-curls"><div class="ph v3"></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">03</span><span class="media-price">from £120</span></div>
+            <h3 class="h-card">French Curls</h3>
+            <p class="desc">Soft, bouncy curls braided through for a romantic, voluminous finish — in every length.</p>
+            <p class="inc">Braiding hair included (default black). Boho option included.</p>
+            <div class="foot"><a href="booking.html?service=french-curls" class="btn sm" data-book="french-curls">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#french-curls" class="link-plain">View sizes</a></div>
           </article>
-        </div>
+          <article class="service-card zoom reveal d1">
+            <div class="media r-16-10" data-slot="service-knotless"><div class="ph v4"></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">04</span><span class="media-price">from £100</span></div>
+            <h3 class="h-card">Knotless Braids</h3>
+            <p class="desc">Our signature — featherlight from the very first braid, kind to your edges and beautiful for weeks.</p>
+            <p class="inc">Braiding hair included. Colours available as add-ons.</p>
+            <div class="foot"><a href="booking.html?service=knotless" class="btn sm" data-book="knotless">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#knotless" class="link-plain">View sizes</a></div>
+          </article>
+          <article class="service-card zoom reveal d2">
+            <div class="media r-16-10" data-slot="service-knotless-boho"><div class="ph "></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">05</span><span class="media-price">from £130</span></div>
+            <h3 class="h-card">Knotless Boho Braids</h3>
+            <p class="desc">Knotless braids dressed with soft curls — for natural, effortless volume.</p>
+            <p class="inc">Braiding hair included. Boho details confirmed at consultation.</p>
+            <div class="foot"><a href="booking.html?service=knotless-boho" class="btn sm" data-book="knotless-boho">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#knotless-boho" class="link-plain">View sizes</a></div>
+          </article>
+          <article class="service-card zoom reveal d3">
+            <div class="media r-16-10" data-slot="service-wigs"><div class="ph v2"></div><span class="slot-tag">Photo coming soon</span><span class="media-idx">06</span><span class="media-price">from £75</span></div>
+            <h3 class="h-card">Custom Wigs</h3>
+            <p class="desc">Frontal and closure units, constructed and finished by hand for a flawless, natural lay.</p>
+            <p class="inc">Hand-constructed units. Hair, finish and styling confirmed at consultation.</p>
+            <div class="foot"><a href="booking.html?service=wigs" class="btn sm" data-book="wigs">Book this style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="services.html#wigs" class="link-plain">View sizes</a></div>
+          </article></div>
+        <div class="text-center reveal" style="margin-top:3.5rem"><a href="services.html" class="btn secondary">See the full menu &amp; price list<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
 
-        <div class="text-center mt-12 reveal">
-          <a href="services.html" class="btn-outline-dark">View Full Menu & Prices</a>
+    <!-- ═══ PORTFOLIO TEASER ═══════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="work-h">
+      <div class="container grid-12 center">
+        <div class="col-7 reveal">
+          <div class="grid-2" style="align-items:start">
+            <div class="zoom"><div class="media r-3-4" data-slot="work-teaser-1"><div class="ph v3"></div><span class="slot-tag">Photo coming soon</span><div class="media-cap"><span class="tiny">Signature</span><strong>Knotless Braids</strong></div></div></div>
+            <div class="zoom" style="margin-top:4rem"><div class="media r-3-4" data-slot="work-teaser-2"><div class="ph v4"></div><span class="slot-tag">Photo coming soon</span><div class="media-cap"><span class="tiny">Statement</span><strong>French Curls</strong></div></div></div>
+          </div>
+        </div>
+        <div class="col-5 reveal d2">
+          <span class="eyebrow">Our work</span>
+          <h2 id="work-h" class="h-sec">Discover <em>the work</em></h2>
+          <span class="rule left"></span>
+          <p class="lead">A curated look at what leaves the chair — real clients, real results. The gallery is being photographed now; the frames are ready.</p>
+          <div class="btn-row" style="margin-top:2rem"><a href="our-work.html" class="btn">Explore the gallery<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer" class="link-plain">@hagiazohair</a></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ ABOUT TEASER ════════════════════════════════════════════════════ -->
-    <section class="py-24 px-6" style="background: var(--cream);" aria-labelledby="about-heading">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <!-- Image -->
-        <div class="relative reveal order-2 lg:order-1">
-          <div class="ph-about w-full h-[480px] lg:h-[580px]"></div>
-          <!-- Floating accent box -->
-          <div class="absolute -bottom-6 -right-6 bg-white p-6 shadow-lg hidden sm:block">
-            <div class="font-serif text-4xl font-semibold" style="color:var(--accent)">15<span class="text-2xl">+</span></div>
-            <div class="text-xs tracking-widest uppercase text-gray-500 mt-1">Years of excellence</div>
-          </div>
+    <!-- ═══ PRICES ═════════════════════════════════════════════════════════ -->
+    <section class="section band-2" aria-labelledby="price-h">
+      <div class="container grid-12 center">
+        <div class="col-6 reveal">
+          <span class="eyebrow">Our prices</span>
+          <h2 id="price-h" class="h-sec">Transparent, <em>always</em></h2>
+          <span class="rule left"></span>
+          <p class="lead sm">Braiding hair is included in every braid service. Size refers to the partings — the finer the braids, the more work and the higher the price. Final quotes are confirmed at your consultation.</p>
+          <div class="price-list" style="margin-top:2rem"><div class="price-row"><span class="name">Boho Bob Braids</span><span class="dots"></span><span class="price">from £110</span></div><div class="price-row"><span class="name">Cornrow & Fulani Braids</span><span class="dots"></span><span class="price">from £85</span></div><div class="price-row"><span class="name">French Curls</span><span class="dots"></span><span class="price">from £120</span></div><div class="price-row"><span class="name">Knotless Braids</span><span class="dots"></span><span class="price">from £100</span></div><div class="price-row"><span class="name">Knotless Boho Braids</span><span class="dots"></span><span class="price">from £130</span></div><div class="price-row"><span class="name">Custom Wigs</span><span class="dots"></span><span class="price">from £75</span></div></div>
+          <div class="btn-row" style="margin-top:2rem"><a href="services.html" class="btn">All prices &amp; sizes<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
-
-        <!-- Text -->
-        <div class="order-1 lg:order-2 reveal reveal-delay-2">
-          <span class="accent-line"></span>
-          <span class="section-label">Our Story</span>
-          <h2 id="about-heading" class="font-serif text-4xl sm:text-5xl font-semibold leading-tight mt-2">
-            More than braids —<br><em class="font-normal">a crowning</em>
-          </h2>
-          <p class="text-gray-500 mt-6 leading-relaxed">
-            Hagiazo was founded in the heart of Tottenham on one belief: that protective styling
-            is an art form, and every head of hair deserves to be treated as something
-            <em>set apart</em>.
-          </p>
-          <p class="text-gray-500 mt-4 leading-relaxed">
-            We specialise in braids and locs for the Afro-Caribbean community — combining
-            authentic technique, healthy-hair care and a calm, unhurried chair that keeps
-            our clients coming back time and again.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 mt-10">
-            <a href="about.html" class="btn-primary">Meet the Team</a>
-            <a href="contact.html#booking" class="btn-outline-dark">Book Now</a>
-          </div>
+        <div class="col-6 reveal d2">
+          <div class="media r-4-3 kb-alt" data-slot="prices-photo"><div class="ph "></div><span class="slot-tag">Photo coming soon</span><div class="quote-card"><p>You don't just leave looking different — you leave set apart.</p><span class="tiny">The Hagiazo promise</span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ BRAND VALUES ════════════════════════════════════════════════════ -->
-    <section class="py-24 px-6 bg-white" aria-labelledby="ethos-heading">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16 reveal">
-          <span class="section-label">House of Hagiazo</span>
-          <h2 id="ethos-heading" class="font-serif text-4xl sm:text-5xl font-semibold mt-2 leading-tight">
-            What we stand for
-          </h2>
-          <p class="text-gray-500 mt-5 max-w-md mx-auto text-sm leading-relaxed">
-            Three promises behind every braid and loc &mdash; the heart of being <em>set apart</em>.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-          <div class="text-center reveal reveal-delay-1">
-            <div class="vicon mx-auto"><svg class="vsvg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke-width=".7" opacity=".2"/><path d="M24 11 C25.4 21 27 22.6 37 24 C27 25.4 25.4 27 24 37 C22.6 27 21 25.4 11 24 C21 22.6 22.6 21 24 11Z" stroke-width="1.25"/><path d="M34.5 12.5 C35 15 35.4 15.4 38 16 C35.4 16.6 35 17 34.5 19.5 C34 17 33.6 16.6 31 16 C33.6 15.4 34 15 34.5 12.5Z" stroke-width="1"/></svg></div>
-            <span class="value-num">I</span>
-            <h3 class="font-serif text-2xl font-semibold mt-1">Set Apart</h3>
-            <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs mx-auto">We rise above trends. You leave intentional, elevated, and unmistakably <em>yourself</em>.</p>
-          </div>
-          <div class="text-center reveal reveal-delay-2">
-            <div class="vicon mx-auto"><svg class="vsvg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke-width=".7" opacity=".2"/><path d="M13 29 L11 17 L18 22 L24 13 L30 22 L37 17 L35 29 Z" stroke-width="1.25"/><path d="M13 33 L35 33" stroke-width="1.25"/><circle cx="11" cy="17" r="1.2" fill="currentColor" stroke="none"/><circle cx="24" cy="13" r="1.4" fill="currentColor" stroke="none"/><circle cx="37" cy="17" r="1.2" fill="currentColor" stroke="none"/></svg></div>
-            <span class="value-num">II</span>
-            <h3 class="font-serif text-2xl font-semibold mt-1">Crown &amp; Glory</h3>
-            <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs mx-auto">Your hair is your crown &mdash; met with <em>mastery</em>, never mediocrity.</p>
-          </div>
-          <div class="text-center reveal reveal-delay-3">
-            <div class="vicon mx-auto"><svg class="vsvg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke-width=".7" opacity=".2"/><path d="M13 30 C13 23.9 17.9 19 24 19 C30.1 19 35 23.9 35 30" stroke-width="1.25"/><path d="M24 15 L24 11" stroke-width="1.2"/><path d="M16 16 L14 12.8" stroke-width="1.2"/><path d="M32 16 L34 12.8" stroke-width="1.2"/><path d="M11 33 L37 33" stroke-width="1.25"/></svg></div>
-            <span class="value-num">III</span>
-            <h3 class="font-serif text-2xl font-semibold mt-1">Seen &amp; Honoured</h3>
-            <p class="text-gray-500 text-sm mt-3 leading-relaxed max-w-xs mx-auto">You are more than a head of hair. You leave <em>restored</em>, not just styled.</p>
-          </div>
+    <!-- ═══ VALUES ═════════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="values-h">
+      <div class="container mid">
+        <div class="section-head reveal"><span class="eyebrow">House of Hagiazo</span><h2 id="values-h" class="h-sec">What we <em>stand for</em></h2><span class="rule"></span><p class="lead">Three promises behind every braid and loc — the heart of being set apart.</p></div>
+        <div class="grid-3">
+          <div class="pillar reveal d1"><span class="tiny">Pillar 01</span><h3>Set Apart</h3><span class="sub">Intentional, elevated, yourself.</span><p>We rise above trends. You leave intentional, elevated, and unmistakably yourself.</p></div>
+          <div class="pillar reveal d2"><span class="tiny">Pillar 02</span><h3>Crown &amp; Glory</h3><span class="sub">Mastery, never mediocrity.</span><p>Your hair is your crown — met with mastery at every parting, never mediocrity.</p></div>
+          <div class="pillar reveal d3"><span class="tiny">Pillar 03</span><h3>Seen &amp; Honoured</h3><span class="sub">Restored, not just styled.</span><p>You are more than a head of hair. You leave restored, not just styled.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ TESTIMONIALS ════════════════════════════════════════════════════ -->
-    <section class="py-24 px-6 bg-white" aria-labelledby="testimonials-heading">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 reveal">
-          <span class="section-label">Client Love</span>
-          <h2 id="testimonials-heading" class="font-serif text-4xl sm:text-5xl font-semibold mt-2">
-            What our clients say
-          </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- T1 -->
-          <blockquote class="testimonial-card reveal reveal-delay-1">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Absolutely incredible from start to finish. My knotless braids were so neat,
-              the parting was flawless and my scalp didn't hurt at all. They lasted weeks
-              looking fresh — I'm obsessed.
-            </p>
-            <footer class="mt-6 pt-5 border-t border-gray-100">
-              <div class="font-medium text-sm text-dark">Amara O.</div>
-              <div class="text-xs text-gray-500 mt-0.5">Knotless Braids</div>
-            </footer>
+    <!-- ═══ TESTIMONIALS ═══════════════════════════════════════════════════ -->
+    <section class="section band-2" aria-labelledby="test-h">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Client stories</span><h2 id="test-h" class="h-sec">What clients <em>say</em></h2><span class="rule"></span><p class="lead">Reviews are gathered from real clients only. These three places are waiting for the first words from the chair.</p></div>
+        <div class="grid-3">
+          <blockquote class="t-card slot reveal d1">
+            <span class="stars ghost" aria-hidden="true"><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span>
+            <p class="q">A client story will live here. We're gathering words from the chair — real names, real styles, nothing invented.</p>
+            <footer class="who"><div><b>Reserved for a client</b><span>Style · Tottenham</span></div><span class="tiny">Coming soon</span></footer>
           </blockquote>
-
-          <!-- T2 -->
-          <blockquote class="testimonial-card reveal reveal-delay-2">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              I've trusted Hagiazo with my loc journey for three years and wouldn't go
-              anywhere else. They retwist with such care and my locs have never been
-              healthier. Always stunning results.
-            </p>
-            <footer class="mt-6 pt-5 border-t border-gray-100">
-              <div class="font-medium text-sm text-dark">Chanté W.</div>
-              <div class="text-xs text-gray-500 mt-0.5">Loc Maintenance</div>
-            </footer>
+          <blockquote class="t-card slot reveal d2">
+            <span class="stars ghost" aria-hidden="true"><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span>
+            <p class="q">A client story will live here. We're gathering words from the chair — real names, real styles, nothing invented.</p>
+            <footer class="who"><div><b>Reserved for a client</b><span>Style · Tottenham</span></div><span class="tiny">Coming soon</span></footer>
           </blockquote>
-
-          <!-- T3 -->
-          <blockquote class="testimonial-card reveal reveal-delay-3">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <div class="stars mb-3" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Booked feed-in cornrows for a big birthday and they absolutely delivered.
-              Everyone kept asking who did my hair. The best braider in Tottenham —
-              hands down.
-            </p>
-            <footer class="mt-6 pt-5 border-t border-gray-100">
-              <div class="font-medium text-sm text-dark">Naomi B.</div>
-              <div class="text-xs text-gray-500 mt-0.5">Feed-in Cornrows</div>
-            </footer>
-          </blockquote>
-        </div>
+          <blockquote class="t-card slot reveal d3">
+            <span class="stars ghost" aria-hidden="true"><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span>
+            <p class="q">A client story will live here. We're gathering words from the chair — real names, real styles, nothing invented.</p>
+            <footer class="who"><div><b>Reserved for a client</b><span>Style · Tottenham</span></div><span class="tiny">Coming soon</span></footer>
+          </blockquote></div>
+        <div class="text-center reveal" style="margin-top:3rem"><a href="testimonials.html" class="btn secondary">Read all client stories<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
     </section>
-
-    <!-- ═══ GALLERY PREVIEW ═════════════════════════════════════════════════ -->
-    <section class="py-24 px-6" style="background: var(--cream);" aria-labelledby="gallery-heading">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 reveal">
-          <div>
-            <span class="section-label">Our Work</span>
-            <h2 id="gallery-heading" class="font-serif text-4xl sm:text-5xl font-semibold mt-2">
-              Results that<br><em class="font-normal">speak for themselves</em>
-            </h2>
-          </div>
-          <a href="gallery.html" class="btn-outline-dark self-start sm:self-auto shrink-0">View Gallery</a>
-        </div>
-
-        <!-- Preview grid (6 items) -->
-        <div class="gallery-grid">
-          <div class="gallery-item tall clip-reveal" aria-label="Knotless braids">
-            <div class="gallery-item-inner ph-hair-1"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-          <div class="gallery-item clip-reveal" aria-label="Faux locs">
-            <div class="gallery-item-inner ph-beauty-1"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-          <div class="gallery-item clip-reveal" aria-label="Feed-in cornrows">
-            <div class="gallery-item-inner ph-hair-3"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-          <div class="gallery-item clip-reveal" aria-label="Starter locs">
-            <div class="gallery-item-inner ph-nails-1"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-          <div class="gallery-item clip-reveal" aria-label="Box braids">
-            <div class="gallery-item-inner ph-hair-2"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-          <div class="gallery-item clip-reveal" aria-label="Loc styling">
-            <div class="gallery-item-inner ph-beauty-2"></div>
-            <div class="gallery-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ BOOKING CTA ═══════════════════════════════════════════════════════ -->
-    <section class="py-28 px-6 text-center relative overflow-hidden" style="background: var(--dark);" aria-labelledby="cta-heading">
-      <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, rgba(255,255,255,1) 0, rgba(255,255,255,1) 1px, transparent 1px, transparent 60px);" aria-hidden="true"></div>
-      <div class="relative z-10 max-w-2xl mx-auto reveal">
-        <span class="section-label">Ready?</span>
-        <h2 id="cta-heading" class="font-serif text-white text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mt-2">
-          Ready for your<br><em class="font-normal" style="color:var(--accent)">transformation?</em>
-        </h2>
-        <p class="text-white/55 text-sm mt-6 max-w-md mx-auto leading-relaxed">
-          Book your appointment today, and let Ruvimbo take care of the rest &mdash;
-          you'll leave set apart.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-          <a href="contact.html#booking" class="btn-cream">Book an Appointment</a>
-          <a href="contact.html" class="btn-outline">Get in Touch</a>
-        </div>
+    
+    <section class="cta-banner" aria-labelledby="cta-h">
+      <div class="bg" data-slot="cta-backdrop"><div class="ph v3"></div></div>
+      <div class="container narrow reveal">
+        <h2 id="cta-h" class="h-sec">Ready for your <em>transformation?</em></h2>
+        <p class="lead" style="text-align:center">Book your appointment today, and let Ruvimbo take care of the rest — you'll leave set apart.</p>
+        <div class="btn-row center"><a href="booking.html" class="btn" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book an appointment</a><a href="#wa" class="btn secondary" data-whatsapp>Message on WhatsApp<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
     </section>
   </main>
 
   <!-- ═══ FOOTER ═══════════════════════════════════════════════════════════ -->
   <footer>
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-10">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
-
-        <!-- Brand -->
-        <div class="lg:col-span-2">
-          <a href="index.html" class="nav-mark" aria-label="Hagiazo Hair home"><img src="assets/hh-light.png" alt="" aria-hidden="true"><span class="wordmark">HAGIAZO<span class="wordmark-sub">Hair</span></span></a>
-          <p class="mt-4 text-sm leading-relaxed max-w-xs" style="color:rgba(255,255,255,0.45)">
-            Premium hair services in the heart of Tottenham, London. Hagiazo — to set apart for a special purpose.
-          </p>
-          <!-- Social icons -->
-          <div class="flex gap-4 mt-6" aria-label="Social media">
-            <a href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer" aria-label="Follow Hagiazo Hair on Instagram" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer" aria-label="Follow Hagiazo Hair on TikTok" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-            </a>
-            <a href="#" aria-label="Hagiazo Hair on Facebook (coming soon)" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="index.html" class="brand" aria-label="Hagiazo Hair — home"><img src="assets/hh-light.png" alt="" width="160" height="184"><span class="wordmark">HAGIAZO<small>Hair</small></span></a>
+          <p class="desc">Premium braids, locs &amp; wigs for the Afro-Caribbean community — one chair, one client, in Tottenham, London.</p>
+          <div class="strap"><span class="tiny">Hagiazo · to set apart</span><em>Be set apart</em></div>
+          <div class="socials" aria-label="Social media">
+            <a href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5M14 3c0 3 2.5 5 5 5"/></svg></a>
+            <a href="#" data-whatsapp aria-label="WhatsApp"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.4 19L4 20z"/><path d="M9.5 9.5c0 2.5 2.5 5 5 5l1-1.5-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2z"/></svg></a>
           </div>
         </div>
-
-        <!-- Quick links -->
         <div>
-          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Navigate</h3>
-          <ul class="space-y-3">
-            <li><a href="index.html"    class="text-sm">Home</a></li>
-            <li><a href="services.html" class="text-sm">Services</a></li>
-            <li><a href="about.html"    class="text-sm">About Us</a></li>
-            <li><a href="gallery.html"  class="text-sm">Gallery</a></li>
-            <li><a href="contact.html"  class="text-sm">Contact</a></li>
-            <li><a href="contact.html#chair-hire" class="text-sm">Hire a Chair</a></li>
-            <li><a href="contact.html#booking" class="text-sm" style="color:var(--accent)">Book Appointment</a></li>
-          </ul>
+          <h3 class="foot-h">Navigation</h3>
+          <ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="about.html">About</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#chair-hire">Hire a chair</a></li><li><a href="booking.html" class="hi" data-book>Book an appointment</a></li></ul>
         </div>
-
-        <!-- Contact -->
         <div>
-          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Visit Us</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="leading-relaxed">Studio 40, Unit 6 Creative Workers<br>Fountayne Road<br>Tottenham, London [Postcode]</li>
-            <li><a href="tel:+44000000000">+44 (0) 000 000 0000</a></li>
-            <li><a href="mailto:hello@hagiazohair.co.uk">hello@hagiazohair.co.uk</a></li>
-            <li class="pt-2">
-              <span class="block text-white/55 text-xs tracking-widest uppercase mb-2">Hours</span>
-              <span class="block">Mon–Sat: 9:00am – 7:00pm</span>
-              <span class="block">Sunday: 10:00am – 5:00pm</span>
-            </li>
-          </ul>
+          <h3 class="foot-h">Studio hours</h3>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Monday – Saturday</b><span>9:00am – 7:00pm</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Sunday</b><span>10:00am – 5:00pm</span></div></div>
+          <p class="small" style="margin-top:.8rem;color:var(--muted)">By appointment only — every slot is one client, one chair.</p>
+        </div>
+        <div>
+          <h3 class="foot-h">Studio contact</h3>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Studio 40, Unit 6 Creative Workers</b><span>Fountayne Road, Tottenham, London</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><div><b><a href="tel:+440000000000">+44 (0) 000 000 0000</a></b><span>Phone number to be confirmed</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 7l9 6 9-6"/></svg><div><b><a href="mailto:hello@hagiazohair.co.uk">hello@hagiazohair.co.uk</a></b><span>We reply personally</span></div></div>
+          <div style="margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);text-align:center"><a href="booking.html" class="btn sm" data-book>Reserve your chair</a></div>
         </div>
       </div>
-
-      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.08)">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p class="text-xs" style="color:rgba(255,255,255,0.3)">© 2026 Hagiazo Hair. All rights reserved.</p>
-          <div class="flex gap-6">
-            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Privacy Policy</a>
-            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Terms of Service</a>
-          </div>
-        </div>
+      <div class="foot-bottom">
+        <span>© 2026 Hagiazo Hair. All rights reserved. · A venture of Hagiazo</span>
+        <div class="right"><span>Afro-Caribbean braids, locs &amp; wigs · Tottenham</span><button id="to-top" aria-label="Back to top"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating live chat -->
+  <!-- Floating chat launcher -->
   <div id="chat-widget">
     <div id="chat-menu" role="menu" aria-label="Chat options">
-      <a class="chat-opt" role="menuitem" href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>WhatsApp</a>
-      <a class="chat-opt" role="menuitem" href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>Instagram DM</a>
-      <a class="chat-opt" role="menuitem" href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></span>TikTok</a>
+      <a class="chat-opt" role="menuitem" href="#" data-whatsapp="Hi Ruvimbo — I'd like to ask about an appointment." target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.4 19L4 20z"/><path d="M9.5 9.5c0 2.5 2.5 5 5 5l1-1.5-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2z"/></svg></span>WhatsApp</a>
+      <a class="chat-opt" role="menuitem" href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>Instagram DM</a>
+      <a class="chat-opt" role="menuitem" href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5M14 3c0 3 2.5 5 5 5"/></svg></span>TikTok</a>
     </div>
-    <button id="chat-toggle" aria-label="Chat with us" aria-expanded="false" aria-haspopup="true">
-      <svg class="chat-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m9 .75c0 4.556-4.03 8.25-9 8.25a9.76 9.76 0 01-2.555-.337A5.97 5.97 0 015.41 20.97a5.97 5.97 0 01-.474-.065 4.5 4.5 0 00.978-2.025.75.75 0 00-.357-.802A8.21 8.21 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-      <svg class="chat-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
+    <button id="chat-toggle" aria-label="Chat with us" aria-expanded="false" aria-haspopup="true"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c0 4-4 7-9 7a10 10 0 0 1-3-.4L4 20l1.2-3.2A6.6 6.6 0 0 1 3 12c0-4 4-7 9-7s9 3 9 7z"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>

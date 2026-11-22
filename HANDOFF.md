@@ -1,5 +1,8 @@
 # 👋 Start here (handoff to remote/iPad session)
 
+> **Superseded (Nov 2026):** the site is built and live; see `README.md` for the current stack,
+> pages and placeholder slots. The notes below are the original scaffold brief, kept for history.
+
 You are continuing an in-progress project. The desktop session set everything up;
 your job is to build the site. Read this, then read `README.md`.
 

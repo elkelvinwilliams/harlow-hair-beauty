@@ -3,406 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hagiazo Hair price list — knotless braids, boho bob braids, French curls, cornrow & Fulani braids and custom wigs in Tottenham, London. Braiding hair included.">
-  <title>Services & Prices | Hagiazo Hair</title>
-  <link rel="stylesheet" href="css/tailwind.css">
+  <meta name="description" content="Hagiazo Hair price list — boho bob braids, cornrow &amp; Fulani braids, French curls, knotless braids, knotless boho and custom wigs in Tottenham, London. Braiding hair included.">
+  <meta name="theme-color" content="#0D0A07">
+  <title>Services &amp; Prices | Hagiazo Hair, Tottenham</title>
+  <link rel="icon" href="assets/hh-light.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body class="font-sans bg-cream text-dark">
-
-  <!-- ═══ NAVIGATION ════════════════════════════════════════════════════════ -->
-  <nav id="site-nav" aria-label="Main navigation">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="nav-mark" aria-label="Hagiazo Hair home"><img src="assets/hh-light.png" alt="" aria-hidden="true"><span class="wordmark">HAGIAZO<span class="wordmark-sub">Hair</span></span></a>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2">Home</a>
-          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2">Services</a>
-          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2">About</a>
-          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2">Gallery</a>
-          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide transition-colors py-2">Contact</a>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="contact.html#booking" class="btn-cream !hidden sm:!inline-flex text-sm px-5 py-2.5">Book Now</a>
-          <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"
-                  class="md:hidden text-white p-2 -mr-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
-            <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-            <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="hidden"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-          </button>
-        </div>
-      </div>
-      <div id="mobile-menu">
-        <div class="pb-6 pt-2 flex flex-col gap-1 border-t border-white/10">
-          <a href="index.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Home</a>
-          <a href="services.html" data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Services</a>
-          <a href="about.html"    data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">About</a>
-          <a href="gallery.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Gallery</a>
-          <a href="contact.html"  data-nav-link class="text-white/65 hover:text-white text-sm tracking-wide py-3 px-1 transition-colors">Contact</a>
-          <a href="contact.html#booking" class="btn-cream text-center mt-3">Book an Appointment</a>
-        </div>
+<body>
+  <!-- ═══ HEADER ═══════════════════════════════════════════════════════════ -->
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand" aria-label="Hagiazo Hair — home"><img src="assets/hh-light.png" alt="" width="160" height="184"><span class="wordmark">HAGIAZO<small>Hair</small></span></a>
+      <nav class="nav-desktop" aria-label="Main navigation"><a href="index.html" data-nav>Home</a><a href="services.html" data-nav>Services</a><a href="our-work.html" data-nav>Our Work</a><a href="testimonials.html" data-nav>Testimonials</a><a href="about.html" data-nav>About</a><a href="faqs.html" data-nav>FAQs</a><a href="contact.html" data-nav>Contact</a></nav>
+      <div class="header-row" style="gap:1rem">
+        <a href="booking.html" class="btn sm header-cta" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book now</a>
+        <button id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       </div>
     </div>
+  </header>
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="row" data-nav>Home<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="services.html" class="row" data-nav>Services<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="our-work.html" class="row" data-nav>Our Work<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="testimonials.html" class="row" data-nav>Testimonials<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="about.html" class="row" data-nav>About<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="faqs.html" class="row" data-nav>FAQs<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a href="contact.html" class="row" data-nav>Contact<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+    <div class="mob-foot"><a href="booking.html" class="btn" data-book><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book an appointment</a><span class="tiny">Tottenham, London · by appointment</span></div>
   </nav>
 
   <main>
-    <!-- ═══ PAGE HERO ═══════════════════════════════════════════════════════ -->
-    <header class="page-hero page-hero-bg" aria-label="Services page header">
-      <div class="absolute inset-0 opacity-[0.03]" data-parallax="0.10" style="top:-120px; background-image: repeating-linear-gradient(0deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px), repeating-linear-gradient(90deg,rgba(255,255,255,1) 0,rgba(255,255,255,1) 1px,transparent 1px,transparent 80px);" aria-hidden="true"></div>
-      <div class="relative z-10 text-center px-6">
-        <span class="section-label fade-up fade-up-1">What We Offer</span>
-        <h1 class="font-serif text-white text-5xl sm:text-6xl font-semibold mt-2 leading-tight fade-up fade-up-2">
-          Braids &amp; Locs
-        </h1>
-        <p class="text-white/55 mt-4 text-sm max-w-md mx-auto fade-up fade-up-3">
-          Every style, lovingly installed. Every price, transparently listed.
-        </p>
-      </div>
+    <div class="services-bg" aria-hidden="true" data-slot="services-backdrop" style="position:fixed;inset:0;z-index:-1"><div class="ph v3" style="position:absolute;inset:0"></div><div style="position:absolute;inset:0;background:rgba(13,10,7,.82)"></div></div>
+    <header class="page-title container narrow">
+      <span class="eyebrow fade-up d1">Services &amp; prices</span>
+      <h1 class="h-page fade-up d2">Artisanal <em>services</em></h1>
+      <span class="rule fade-up d3"></span>
+      <p class="lead fade-up d4">Every style, lovingly installed. Every price, transparently listed. Braiding hair is included in all braid services — size refers to the partings: the finer the braids, the more work and the higher the price.</p>
     </header>
-
-    <!-- ═══ INTRO BANNER ════════════════════════════════════════════════════ -->
-    <div class="py-8 px-6 text-center reveal" style="background:var(--accent-light);">
-      <p class="text-sm" style="color:var(--accent-hover);">
-        <strong>Braiding hair is included</strong> in all braid services. Size refers to the
-        partings (how fine the braids are) — the finer the braids, the more work and the higher
-        the price. Final quotes are confirmed at your consultation.
-      </p>
-    </div>
-
-    <!-- ═══ 01 · BOHO BOB BRAIDS ════════════════════════════════════════════ -->
-    <section id="bob-braids" class="py-20 px-6 bg-white" aria-labelledby="bob-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-hair-1 mb-6"></div>
-            <span class="section-label">01</span>
-            <h2 id="bob-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              Boho Bob<br>Braids
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              The on-trend bob with soft, curled ends — playful, lightweight and endlessly flattering.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book Boho Bobs</a>
+    <section class="section" style="padding-top:1rem" aria-label="Service menu">
+      <div class="container mid">
+        <article id="boho-bob" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 01</span>
+            <h2 class="h-block" style="margin-top:.6rem">Boho Bob Braids</h2>
+            <p class="italic-note tagline">Soft ends, effortless shape.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-boho-bob-detail"><div class="ph "></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £110 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=boho-bob" class="btn" data-book="boho-bob"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book Boho Bob</a></div>
           </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Shoulder Length</h3>
-            <div class="mb-8">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£130</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£120</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£110</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Long Bob · Armpit Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£130</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£120</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Braiding hair &amp; curled ends included. Boho pieces not included.</p>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Shoulder Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£130</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£120</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£110</span></div></div></div><div class="price-group"><h4>Long Bob · Armpit Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£130</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£120</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Braiding hair & curled ends included. Boho pieces not included.</span></p>
           </div>
-        </div>
-      </div>
+        </article>
+        <article id="fulani" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 02</span>
+            <h2 class="h-block" style="margin-top:.6rem">Cornrow & Fulani Braids</h2>
+            <p class="italic-note tagline">Artistry that sits close and lasts.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-fulani-detail"><div class="ph v2"></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £85 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=fulani" class="btn" data-book="fulani"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book Cornrow & Fulani</a></div>
+          </div>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Fulani Braids</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£130</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£120</span></div></div></div><div class="price-group"><h4>Straight Backs / Cornrows · to waist</h4><div class="price-list"><div class="price-row"><span class="name">8–10 braids</span><span class="dots"></span><span class="price">£95</span></div><div class="price-row"><span class="name">11–16 braids</span><span class="dots"></span><span class="price">£105</span></div><div class="price-row"><span class="name">17–25 braids</span><span class="dots"></span><span class="price">£130</span></div></div></div><div class="price-group"><h4>Fulani Sew-In</h4><div class="price-list"><div class="price-row"><span class="name">Small Fulani Sew-In</span><span class="dots"></span><span class="price">£85</span></div><div class="price-row"><span class="name">Small Fulani Side Sew-In</span><span class="dots"></span><span class="price">£105</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Braiding hair included. Sew-in add-on hair charged separately.</span></p>
+          </div>
+        </article>
+        <article id="french-curls" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 03</span>
+            <h2 class="h-block" style="margin-top:.6rem">French Curls</h2>
+            <p class="italic-note tagline">Romantic, voluminous, in every length.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-french-curls-detail"><div class="ph v3"></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £120 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=french-curls" class="btn" data-book="french-curls"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book French Curls</a></div>
+          </div>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Bob</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£130</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£120</span></div></div></div><div class="price-group"><h4>Mid-Back</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£150</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£130</span></div></div></div><div class="price-group"><h4>Waist Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£165</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£155</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£145</span></div></div></div><div class="price-group"><h4>Bum Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£180</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£170</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£160</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Braiding hair included (default black). Boho option included.</span></p>
+          </div>
+        </article>
+        <article id="knotless" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 04</span>
+            <h2 class="h-block" style="margin-top:.6rem">Knotless Braids</h2>
+            <p class="italic-note tagline">Our signature — featherlight from the first braid.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-knotless-detail"><div class="ph v4"></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £100 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=knotless" class="btn" data-book="knotless"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book Knotless</a></div>
+          </div>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Mid-Back</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£115</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£100</span></div></div></div><div class="price-group"><h4>Waist Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£160</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£130</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£120</span></div></div></div><div class="price-group"><h4>Bum Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£185</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£150</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£140</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Braiding hair included. Colours available as add-ons.</span></p>
+          </div>
+        </article>
+        <article id="knotless-boho" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 05</span>
+            <h2 class="h-block" style="margin-top:.6rem">Knotless Boho Braids</h2>
+            <p class="italic-note tagline">Natural, effortless volume.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-knotless-boho-detail"><div class="ph "></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £130 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=knotless-boho" class="btn" data-book="knotless-boho"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book Knotless Boho</a></div>
+          </div>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Mid-Back</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£150</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£140</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£130</span></div></div></div><div class="price-group"><h4>Waist Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£160</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£150</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£140</span></div></div></div><div class="price-group"><h4>Bum Length</h4><div class="price-list"><div class="price-row"><span class="name">Small</span><span class="dots"></span><span class="price">£170</span></div><div class="price-row"><span class="name">Smedium</span><span class="dots"></span><span class="price">£160</span></div><div class="price-row"><span class="name">Medium</span><span class="dots"></span><span class="price">£150</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Braiding hair included. Boho details confirmed at consultation.</span></p>
+          </div>
+        </article>
+        <article id="wigs" class="service-block grid-12">
+          <div class="col-5 reveal">
+            <span class="tiny">Style 06</span>
+            <h2 class="h-block" style="margin-top:.6rem">Custom Wigs</h2>
+            <p class="italic-note tagline">Hand-made for a flawless, natural lay.</p>
+            <div class="zoom"><div class="media r-4-3" data-slot="service-wigs-detail"><div class="ph v2"></div><span class="slot-tag">Photo coming soon</span></div></div>
+            <p class="meta"><b>Starting from</b> £75 · braiding hair included</p>
+            <div class="btn-row" style="margin-top:1.4rem"><a href="booking.html?service=wigs" class="btn" data-book="wigs"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="0"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Book Custom Wigs</a></div>
+          </div>
+          <div class="col-7 reveal d2">
+            <div class="spec-head"><span>Length &amp; sizing breakdown</span><span>GBP (£)</span></div>
+            <div class="price-group"><h4>Construction</h4><div class="price-list"><div class="price-row"><span class="name">Frontal Wig Unit</span><span class="dots"></span><span class="price">£80</span></div><div class="price-row"><span class="name">Closure Wig Unit</span><span class="dots"></span><span class="price">£75</span></div></div></div>
+            <p class="service-note"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><b style="color:var(--text-2);font-weight:500">Service note:</b> Hand-constructed units. Hair, finish and styling confirmed at consultation.</span></p>
+          </div>
+        </article></div>
     </section>
 
-    <!-- ═══ 02 · CORNROW & FULANI BRAIDS ════════════════════════════════════ -->
-    <section id="fulani" class="py-20 px-6" style="background:var(--cream);" aria-labelledby="fulani-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-beauty-1 mb-6"></div>
-            <span class="section-label">02</span>
-            <h2 id="fulani-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              Cornrow &amp;<br>Fulani Braids
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              Intricate Fulani patterns, clean straight-backs and sleek sew-ins — artistry that sits close and lasts.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book Fulani</a>
+    <section class="section band-2" aria-labelledby="prep-h">
+      <div class="container mid">
+        <div class="section-head reveal"><span class="eyebrow">Before &amp; after the chair</span><h2 id="prep-h" class="h-sec">Preparation &amp; <em>aftercare</em></h2><span class="rule"></span><p class="lead">A little care on both sides of your appointment keeps the style flawless for weeks.</p></div>
+        <div class="grid-2">
+          <div class="reveal">
+            <h3 class="tiny icon-h"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>How to prepare your hair</h3>
+            <ul style="margin-top:1.2rem;display:grid;gap:.9rem">
+              <li class="small"><b style="color:var(--cream);font-weight:500">Clean scalp.</b> Arrive freshly washed, with no heavy product or build-up.</li>
+              <li class="small"><b style="color:var(--cream);font-weight:500">Detangled &amp; blow-dried.</b> Hair should be fully dry and stretched so partings sit clean — unless you've booked a wash with us.</li>
+              <li class="small"><b style="color:var(--cream);font-weight:500">Tell us about your scalp.</b> Any soreness, thinning or tender edges — we'll adapt the tension and the style around you.</li>
+            </ul>
           </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Fulani Braids</h3>
-            <div class="mb-8">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£130</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£120</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Straight Backs / Cornrows · to waist</h3>
-            <div class="mb-8">
-              <div class="service-row"><span class="text-sm">8–10 braids</span><span class="price-tag text-sm">£95</span></div>
-              <div class="service-row"><span class="text-sm">11–16 braids</span><span class="price-tag text-sm">£105</span></div>
-              <div class="service-row"><span class="text-sm">17–25 braids</span><span class="price-tag text-sm">£130</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Fulani Sew-In</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small Fulani Sew-In</span><span class="price-tag text-sm">£85</span></div>
-              <div class="service-row"><span class="text-sm">Small Fulani Side Sew-In</span><span class="price-tag text-sm">£105</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Braiding hair included. Sew-in add-on hair charged separately.</p>
+          <div class="reveal d2">
+            <h3 class="tiny icon-h"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>Extending your style</h3>
+            <ul style="margin-top:1.2rem;display:grid;gap:.9rem">
+              <li class="small"><b style="color:var(--cream);font-weight:500">Satin at night.</b> A scarf, bonnet or pillowcase stops frizz and keeps edges smooth.</li>
+              <li class="small"><b style="color:var(--cream);font-weight:500">Light scalp care.</b> Cleanse gently every 1–2 weeks; a little light oil keeps the scalp comfortable.</li>
+              <li class="small"><b style="color:var(--cream);font-weight:500">Know when to take down.</b> Most braided styles look their best for 4–6 weeks — take them down before the roots start to matte.</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ═══ 03 · FRENCH CURLS ═══════════════════════════════════════════════ -->
-    <section id="french-curls" class="py-20 px-6 bg-white" aria-labelledby="french-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-nails-1 mb-6"></div>
-            <span class="section-label">03</span>
-            <h2 id="french-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              French<br>Curls
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              Soft, bouncy curls braided through for a romantic, voluminous finish — in every length.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book French Curls</a>
-          </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Bob</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£130</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£120</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Mid-Back</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£150</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£130</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Waist Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£165</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£155</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£145</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Bum Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£180</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£170</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£160</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Braiding hair included (default black). Boho option included.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ 04 · KNOTLESS BRAIDS ════════════════════════════════════════════ -->
-    <section id="knotless" class="py-20 px-6" style="background:var(--cream);" aria-labelledby="knotless-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-hair-1 mb-6"></div>
-            <span class="section-label">04</span>
-            <h2 id="knotless-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              Knotless<br>Braids
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              Our signature — featherlight from the very first braid, kind to your edges and beautiful for weeks.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book Knotless</a>
-          </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Mid-Back</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£115</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£100</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Waist Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£160</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£130</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£120</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Bum Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£185</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£150</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£140</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Braiding hair included. Colours available as add-ons.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ 05 · KNOTLESS BOHO BRAIDS ═══════════════════════════════════════ -->
-    <section id="knotless-boho" class="py-20 px-6 bg-white" aria-labelledby="boho-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-beauty-1 mb-6"></div>
-            <span class="section-label">05</span>
-            <h2 id="boho-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              Knotless Boho<br>Braids
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              Knotless braids dressed with soft curls — for natural, effortless volume.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book Knotless Boho</a>
-          </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Mid-Back</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£150</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£140</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£130</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Waist Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£160</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£150</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£140</span></div>
-            </div>
-
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Bum Length</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Small</span><span class="price-tag text-sm">£170</span></div>
-              <div class="service-row"><span class="text-sm">Smedium</span><span class="price-tag text-sm">£160</span></div>
-              <div class="service-row"><span class="text-sm">Medium</span><span class="price-tag text-sm">£150</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Braiding hair included. Soft, natural volume — boho details confirmed at consultation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ 06 · WIGS ═══════════════════════════════════════════════════════ -->
-    <section id="wigs" class="py-20 px-6" style="background:var(--cream);" aria-labelledby="wigs-heading">
-      <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
-          <div class="lg:col-span-2 reveal">
-            <div class="w-12 h-12 ph-nails-1 mb-6"></div>
-            <span class="section-label">06</span>
-            <h2 id="wigs-heading" class="font-serif text-4xl font-semibold mt-1 leading-tight">
-              Custom<br>Wigs
-            </h2>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">
-              Frontal and closure units, constructed and finished by hand for a flawless, natural lay.
-            </p>
-            <a href="contact.html#booking" class="btn-primary mt-8 inline-flex">Book a Wig</a>
-          </div>
-
-          <div class="lg:col-span-3 reveal reveal-delay-1">
-            <h3 class="text-xs font-semibold tracking-widest uppercase mb-4" style="color:var(--accent)">Construction</h3>
-            <div class="mb-6">
-              <div class="service-row"><span class="text-sm">Frontal Wig Unit</span><span class="price-tag text-sm">£80</span></div>
-              <div class="service-row"><span class="text-sm">Closure Wig Unit</span><span class="price-tag text-sm">£75</span></div>
-            </div>
-
-            <p class="text-xs text-gray-500">Hand-constructed units. Hair, finish and styling confirmed at consultation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ CTA ══════════════════════════════════════════════════════════════ -->
-    <section class="py-20 px-6 text-center" style="background:var(--dark);" aria-labelledby="services-cta">
-      <div class="max-w-xl mx-auto reveal">
-        <span class="section-label">Next Step</span>
-        <h2 id="services-cta" class="font-serif text-white text-4xl font-semibold mt-2">
-          Ready to book?
-        </h2>
-        <p class="text-white/55 text-sm mt-4 leading-relaxed">
-          Get in touch or book online. We'll confirm your appointment and send a reminder — no fuss.
-        </p>
-        <a href="contact.html#booking" class="btn-cream mt-8 inline-flex">Book an Appointment</a>
+        <div class="text-center reveal" style="margin-top:3.5rem"><a href="booking.html" class="btn secondary" data-book>Ready to book? Choose your style<svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
     </section>
   </main>
 
-  <!-- ═══ FOOTER ════════════════════════════════════════════════════════════ -->
+  <!-- ═══ FOOTER ═══════════════════════════════════════════════════════════ -->
   <footer>
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-10">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
-        <div class="lg:col-span-2">
-          <a href="index.html" class="nav-mark" aria-label="Hagiazo Hair home"><img src="assets/hh-light.png" alt="" aria-hidden="true"><span class="wordmark">HAGIAZO<span class="wordmark-sub">Hair</span></span></a>
-          <p class="mt-4 text-sm leading-relaxed max-w-xs" style="color:rgba(255,255,255,0.45)">Premium braids & locs, crafted in the heart of Tottenham, London. Hagiazo: to set apart for a special purpose.</p>
-          <div class="flex gap-4 mt-6" aria-label="Social media">
-            <a href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer" aria-label="Follow Hagiazo Hair on Instagram" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer" aria-label="Follow Hagiazo Hair on TikTok" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-            </a>
-            <a href="#" aria-label="Hagiazo Hair on Facebook (coming soon)" class="text-white/55 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="index.html" class="brand" aria-label="Hagiazo Hair — home"><img src="assets/hh-light.png" alt="" width="160" height="184"><span class="wordmark">HAGIAZO<small>Hair</small></span></a>
+          <p class="desc">Premium braids, locs &amp; wigs for the Afro-Caribbean community — one chair, one client, in Tottenham, London.</p>
+          <div class="strap"><span class="tiny">Hagiazo · to set apart</span><em>Be set apart</em></div>
+          <div class="socials" aria-label="Social media">
+            <a href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5M14 3c0 3 2.5 5 5 5"/></svg></a>
+            <a href="#" data-whatsapp aria-label="WhatsApp"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.4 19L4 20z"/><path d="M9.5 9.5c0 2.5 2.5 5 5 5l1-1.5-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2z"/></svg></a>
           </div>
         </div>
         <div>
-          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Navigate</h3>
-          <ul class="space-y-3">
-            <li><a href="index.html"    class="text-sm">Home</a></li>
-            <li><a href="services.html" class="text-sm">Services</a></li>
-            <li><a href="about.html"    class="text-sm">About Us</a></li>
-            <li><a href="gallery.html"  class="text-sm">Gallery</a></li>
-            <li><a href="contact.html"  class="text-sm">Contact</a></li>
-            <li><a href="contact.html#chair-hire" class="text-sm">Hire a Chair</a></li>
-            <li><a href="contact.html#booking" class="text-sm" style="color:var(--accent)">Book Appointment</a></li>
-          </ul>
+          <h3 class="foot-h">Navigation</h3>
+          <ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="about.html">About</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#chair-hire">Hire a chair</a></li><li><a href="booking.html" class="hi" data-book>Book an appointment</a></li></ul>
         </div>
         <div>
-          <h3 class="text-white text-xs font-semibold tracking-widest uppercase mb-6">Visit Us</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="leading-relaxed">Studio 40, Unit 6 Creative Workers<br>Fountayne Road<br>Tottenham, London [Postcode]</li>
-            <li><a href="tel:+44000000000">+44 (0) 000 000 0000</a></li>
-            <li><a href="mailto:hello@hagiazohair.co.uk">hello@hagiazohair.co.uk</a></li>
-            <li class="pt-2">
-              <span class="block text-white/55 text-xs tracking-widest uppercase mb-2">Hours</span>
-              Mon–Sat: 9:00am – 7:00pm<br>Sunday: 10:00am – 5:00pm
-            </li>
-          </ul>
+          <h3 class="foot-h">Studio hours</h3>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Monday – Saturday</b><span>9:00am – 7:00pm</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Sunday</b><span>10:00am – 5:00pm</span></div></div>
+          <p class="small" style="margin-top:.8rem;color:var(--muted)">By appointment only — every slot is one client, one chair.</p>
+        </div>
+        <div>
+          <h3 class="foot-h">Studio contact</h3>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Studio 40, Unit 6 Creative Workers</b><span>Fountayne Road, Tottenham, London</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><div><b><a href="tel:+440000000000">+44 (0) 000 000 0000</a></b><span>Phone number to be confirmed</span></div></div>
+          <div class="foot-row"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 7l9 6 9-6"/></svg><div><b><a href="mailto:hello@hagiazohair.co.uk">hello@hagiazohair.co.uk</a></b><span>We reply personally</span></div></div>
+          <div style="margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);text-align:center"><a href="booking.html" class="btn sm" data-book>Reserve your chair</a></div>
         </div>
       </div>
-      <div class="border-t pt-8" style="border-color:rgba(255,255,255,0.08)">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p class="text-xs" style="color:rgba(255,255,255,0.3)">© 2026 Hagiazo Hair. All rights reserved.</p>
-          <div class="flex gap-6">
-            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Privacy Policy</a>
-            <a href="#" class="text-xs" style="color:rgba(255,255,255,0.3)">Terms of Service</a>
-          </div>
-        </div>
+      <div class="foot-bottom">
+        <span>© 2026 Hagiazo Hair. All rights reserved. · A venture of Hagiazo</span>
+        <div class="right"><span>Afro-Caribbean braids, locs &amp; wigs · Tottenham</span><button id="to-top" aria-label="Back to top"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating live chat -->
+  <!-- Floating chat launcher -->
   <div id="chat-widget">
     <div id="chat-menu" role="menu" aria-label="Chat options">
-      <a class="chat-opt" role="menuitem" href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>WhatsApp</a>
-      <a class="chat-opt" role="menuitem" href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>Instagram DM</a>
-      <a class="chat-opt" role="menuitem" href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></span>TikTok</a>
+      <a class="chat-opt" role="menuitem" href="#" data-whatsapp="Hi Ruvimbo — I'd like to ask about an appointment." target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.4 19L4 20z"/><path d="M9.5 9.5c0 2.5 2.5 5 5 5l1-1.5-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2z"/></svg></span>WhatsApp</a>
+      <a class="chat-opt" role="menuitem" href="https://www.instagram.com/hagiazohair" target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>Instagram DM</a>
+      <a class="chat-opt" role="menuitem" href="https://vm.tiktok.com/ZNRwuLbhB/" target="_blank" rel="noopener noreferrer"><span class="ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5M14 3c0 3 2.5 5 5 5"/></svg></span>TikTok</a>
     </div>
-    <button id="chat-toggle" aria-label="Chat with us" aria-expanded="false" aria-haspopup="true">
-      <svg class="chat-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m9 .75c0 4.556-4.03 8.25-9 8.25a9.76 9.76 0 01-2.555-.337A5.97 5.97 0 015.41 20.97a5.97 5.97 0 01-.474-.065 4.5 4.5 0 00.978-2.025.75.75 0 00-.357-.802A8.21 8.21 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-      <svg class="chat-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
+    <button id="chat-toggle" aria-label="Chat with us" aria-expanded="false" aria-haspopup="true"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c0 4-4 7-9 7a10 10 0 0 1-3-.4L4 20l1.2-3.2A6.6 6.6 0 0 1 3 12c0-4 4-7 9-7s9 3 9 7z"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>

@@ -37,6 +37,15 @@ the live site is the real, approved product; reverting would be a rebrand, not a
 
 ---
 
+## Edition 2 — the dark editorial system *(2026-11-22)*
+
+The site was rebuilt as a **dark-first editorial system** on the same tokens: page background
+`--dark` (#0D0A07) with cream type, hairlines (`rgba(250,250,248,.10–.34)`) instead of boxes,
+**text-with-underline buttons** (no fills), 112px section rhythm, alternating near-black bands,
+and slow motion (20s Ken Burns, 28s marquee, 0.8s hero fade-up). Headings keep the
+**Fraunces roman + italic-light accent word** device. Everything below still holds; where it
+describes the cream-first layout (sections 4–5), the dark system in `css/site.css` is now canonical.
+
 ## 0. Brand architecture — Hagiazo (parent) → Hagiazo Hair (venture)
 
 Hagiazo Hair is **the first venture of Hagiazo**, a house of ventures (Hair, then Homes,
@@ -145,4 +154,5 @@ on dark, **`gray-500` or darker** on light — never lighter (they fail AA contr
 | Date | Version | Change | By |
 |---|---|---|---|
 | 2026-09-06 | 0.1 | Initial draft; recorded C1, recommended shipped brand | Claude |
+| 2026-11-22 | 1.1 | Edition 2: dark-first editorial system recorded; `css/site.css` canonical | Claude |
 | 2026-09-06 | 1.0 | **Founder confirmed shipped brand as canonical.** Expanded into full Brand & Theme Guideline (type scale, layout, components, motion, imagery, do/don't) from the live build. | Claude |

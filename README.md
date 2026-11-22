@@ -56,7 +56,7 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
 9. [ ] Testimonials / reviews
 
 **Practical**
-10. [~] Address, phone, email, opening hours — **address supplied:** Studio 40, Unit 6
+10. [~] Address, phone, email, opening hours — **address supplied:** Studio 40, Unit 7
         Creative Works, Fountayne Road, Tottenham, London N15 4QL. Phone, email
         and hours still placeholders.
 11. [x] Social links — Instagram (@hagiazohair) + TikTok live; Facebook placeholder (coming soon)

@@ -20,7 +20,7 @@ A crisp one-pager you can read in a minute, or show to an accountant, bank or la
 | **Business** | Hagiazo Hair — *the first venture of Hagiazo* |
 | **What it is** | A premium braids, locs & wig studio for the Afro-Caribbean community |
 | **Part of** | **Hagiazo** — a house of ventures (Hair → Homes → Beauty, Wellness & more). See BIZ-08. |
-| **Location** | Studio 40, Unit 6 Creative Workers, Fountayne Road, Tottenham, London N15 4QL |
+| **Location** | Studio 40, Unit 6 Creative Works, Fountayne Road, Tottenham, London N15 4QL |
 | **Founder** | Ruvimbo — therapist-trained stylist, ~15 years' experience |
 | **Strapline** | *Be set apart* |
 | **Model** | By appointment, deposit-secured bookings |

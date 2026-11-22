@@ -64,25 +64,49 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
 
 ## Local preview
 
-Tailwind is compiled to a static stylesheet (`css/tailwind.css`) — no CDN, no
-runtime build. Just open `index.html` in a browser, or run a static server:
+Plain static HTML — no build step. Open `index.html`, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-If you change the markup (add/remove Tailwind classes), rebuild the CSS:
+## Stack (edition 2 — November 2026)
 
-```bash
-npm install        # first time only
-npm run build:css  # or `npm run watch:css` while editing
-```
+- `css/site.css` — the whole design system (dark-first editorial on the house tokens:
+  Fraunces + Inter, hairlines not boxes, underline buttons, sharp corners, reduced-motion safe).
+- `js/site.js` — behaviour: header, mobile nav, reveals, counters, marquee, gallery filter +
+  lightbox, testimonial carousel, FAQ accordion, booking estimator, chat launcher.
+  **Two settings live at the top of this file:** `BOOKING_URL` (the external booking system —
+  empty until it exists; every Book button then goes to `booking.html`) and `WHATSAPP`.
+- No Tailwind, no npm — the previous Tailwind build was retired with this edition.
 
-## Planned pages
+## Pages
 
-- `index.html` — Home (hero, services preview, about preview, testimonials, CTA)
-- `services.html` — Full services + price list
-- `about.html` — Story + team
-- `gallery.html` — Work / salon photos
-- `contact.html` — Contact details, hours, map, booking
+| Page | What it is |
+|---|---|
+| `index.html` | Home — hero, stats, marquee, story, six styles, work teaser, prices, values, client stories, CTA |
+| `services.html` | Full price list — six styles with length × parting-size breakdowns; prep & aftercare |
+| `our-work.html` | Gallery with filters + lightbox (`gallery.html` redirects here) |
+| `testimonials.html` | Client stories — carousel + grid (placeholder slots until real reviews exist) |
+| `about.html` | Story, values, founder (real photo), the six differences, studio strip |
+| `faqs.html` | Ten questions, accordion |
+| `contact.html` | Studio info, map, enquiry form, chair hire |
+| `booking.html` | Choose style → length → parting size, live estimate, hand-off to WhatsApp / booking link |
+
+## Placeholder slots (fill these as content arrives)
+
+Every image frame is a `.media` element with a `data-slot` name and a "Photo coming soon" tag.
+To drop in a real photo, replace the inner `<div class="ph …"></div>` with
+`<img src="assets/your-photo.jpg" alt="…">` — the frame, overlay and hover zoom stay the same.
+
+| Slot(s) | Where | Suggested shot |
+|---|---|---|
+| `hero-photo` | Home hero | Client in the chair, dark backdrop, landscape |
+| `intro-portrait`, `about-studio-portrait` | Home story, About | Portrait, 4:5 / 3:4 |
+| `service-<id>`, `service-<id>-detail` | Home cards, Services | One finished look per style |
+| `work-teaser-1/2`, `gallery-01…12` | Home, Our Work | Portrait 3:4 results — set `data-title`, `data-desc`, `data-cat` on the tile |
+| `prices-photo`, `cta-backdrop`, `social-backdrop`, `services-backdrop` | Bands | Atmosphere / studio |
+| `studio-1…4` | About | Inside the studio |
+| Testimonial `.t-card.slot` and the carousel JSON on `testimonials.html` | Home, Testimonials | Real reviews only, with consent |
+| `+44 (0) 000 000 0000`, postcode, `BOOKING_URL`, `WHATSAPP` | Footer, Contact, `js/site.js` | Real contact details |

@@ -57,7 +57,7 @@ Logo: standalone HH monogram (background removed) woven through nav, hero, foote
 
 **Practical**
 10. [~] Address, phone, email, opening hours — **address supplied:** Studio 40, Unit 6
-        Creative Workers, Fountayne Road, Tottenham, London (postcode TBC). Phone, email
+        Creative Workers, Fountayne Road, Tottenham, London N15 4QL. Phone, email
         and hours still placeholders.
 11. [x] Social links — Instagram (@hagiazohair) + TikTok live; Facebook placeholder (coming soon)
 12. [ ] Booking method (external link vs built-in form vs both)
